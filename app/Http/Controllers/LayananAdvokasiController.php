@@ -12,7 +12,10 @@ class LayananAdvokasiController extends Controller
      */
     public function index()
     {
-        $layananAdvokasi = LayananAdvokasi::with('angkatan', 'jurusan', 'prodi', 'layanan')->get();
+        $layananAdvokasi = LayananAdvokasi::with('angkatan', 'jurusan', 'prodi', 'layanan')
+            ->orderBy('created_at', 'desc')
+            ->get();
+
         return view('admin.advokasi', compact('layananAdvokasi'));
     }
     /**
