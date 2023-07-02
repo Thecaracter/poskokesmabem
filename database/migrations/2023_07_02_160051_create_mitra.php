@@ -14,8 +14,8 @@ return new class extends Migration {
             $table->id();
             $table->string('nama_mitra');
             $table->string('nama_cp');
-            $table->string('link_mitra');
-            $table->string('link_contact');
+            $table->text('link_mitra');
+            $table->text('link_contact');
             $table->timestamps();
         });
     }
