@@ -20,11 +20,10 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Login berhasil
-            if (Auth::user()->isAdmin()) {
+            if (Auth::user()) {
                 return redirect('/');
             } else {
-                // return redirect('/');
-                echo "Gagal Login";
+                return redirect('/');
             }
         } else {
             // Login gagal
