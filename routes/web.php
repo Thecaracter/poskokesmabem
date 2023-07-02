@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AngkatanController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InfoKosController;
 use App\Http\Controllers\JurusanController;
@@ -65,3 +66,9 @@ Route::get('/infokos', [InfoKosController::class, 'index'])->name('infokos.index
 Route::post('/infokos', [InfoKosController::class, 'store'])->name('infokos.store');
 Route::put('/infokos/{id}', [InfoKosController::class, 'update'])->name('infokos.update');
 Route::delete('/infokos/{id}', [InfoKosController::class, 'destroy'])->name('infokos.destroy');
+
+// Beasiswa route
+Route::get('/beasiswa', [BeasiswaController::class, 'index'])->name('beasiswa.index');
+Route::post('/beasiswa', [BeasiswaController::class, 'store'])->name('beasiswa.store');
+Route::put('/beasiswa/{id}', [BeasiswaController::class, 'update'])->name('beasiswa.update');
+Route::delete('/beasiswa/{id}', [BeasiswaController::class, 'destroy'])->name('beasiswa.destroy');

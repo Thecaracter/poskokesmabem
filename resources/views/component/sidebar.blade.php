@@ -11,7 +11,7 @@
                 <a href="/dashboard" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li
-                class="dropdown {{ Request::path() === 'user' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'prodi' || Request::path() === 'layanan' || Request::path() === 'infokos' ? 'active' : '' }}">
+                class="dropdown {{ Request::path() === 'user' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'prodi' || Request::path() === 'beasiswa' || Request::path() === 'layanan' || Request::path() === 'infokos' ? 'active' : '' }}">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i
                         data-feather="briefcase"></i><span>Master</span></a>
                 <ul class="dropdown-menu">
@@ -30,7 +30,9 @@
                     <li class="dropdown {{ Request::path() === 'layanan' ? 'active' : '' }}"><a class="nav-link"
                             href="/layanan"><i data-feather="smartphone"></i><span>Layanan</span></a>
                     </li>
-
+                    <li class="dropdown {{ Request::path() === 'beasiswa' ? 'active' : '' }}"><a class="nav-link"
+                            href="/beasiswa"><i data-feather="gift"></i><span>Beasiswa</span></a>
+                    </li>
                     <li class="dropdown {{ Request::path() === 'infokos' ? 'active' : '' }}"><a class="nav-link"
                             href="/infokos"><i data-feather="home"></i><span>Info Kos</span></a>
                     </li>
