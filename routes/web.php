@@ -4,6 +4,7 @@ use App\Http\Controllers\AngkatanController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JurusanController;
+use App\Http\Controllers\LayananController;
 use App\Http\Controllers\ProdiController;
 use Illuminate\Support\Facades\Route;
 
@@ -50,3 +51,9 @@ Route::get('/prodi', [ProdiController::class, 'index'])->name('prodi.index');
 Route::post('/prodi', [ProdiController::class, 'store'])->name('prodi.store');
 Route::put('/prodi/{id}', [ProdiController::class, 'update'])->name('prodi.update');
 Route::delete('/prodi/{id}', [ProdiController::class, 'destroy'])->name('prodi.destroy');
+
+// Layanan route
+Route::get('/layanan', [LayananController::class, 'index'])->name('layanan.index');
+Route::post('/layanan', [LayananController::class, 'store'])->name('layanan.store');
+Route::put('/layanan/{id}', [LayananController::class, 'update'])->name('layanan.update');
+Route::delete('/layanan/{id}', [LayananController::class, 'destroy'])->name('layanan.destroy');

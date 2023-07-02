@@ -12,7 +12,6 @@ return new class extends Migration {
     {
         Schema::create('partner', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_partner');
             $table->text('link_partner');
             $table->string('nama_cp');
             $table->text('link_contact');
