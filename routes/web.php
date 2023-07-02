@@ -6,7 +6,9 @@ use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InfoKosController;
 use App\Http\Controllers\JurusanController;
+use App\Http\Controllers\LayananAdvokasiController;
 use App\Http\Controllers\LayananController;
+use App\Http\Controllers\MitraController;
 use App\Http\Controllers\ProdiController;
 use Illuminate\Support\Facades\Route;
 
@@ -72,3 +74,15 @@ Route::get('/beasiswa', [BeasiswaController::class, 'index'])->name('beasiswa.in
 Route::post('/beasiswa', [BeasiswaController::class, 'store'])->name('beasiswa.store');
 Route::put('/beasiswa/{id}', [BeasiswaController::class, 'update'])->name('beasiswa.update');
 Route::delete('/beasiswa/{id}', [BeasiswaController::class, 'destroy'])->name('beasiswa.destroy');
+
+// Mitra route
+Route::get('/mitra', [MitraController::class, 'index'])->name('mitra.index');
+Route::post('/mitra', [MitraController::class, 'store'])->name('mitra.store');
+Route::put('/mitra/{id}', [MitraController::class, 'update'])->name('mitra.update');
+Route::delete('/mitra/{id}', [MitraController::class, 'destroy'])->name('mitra.destroy');
+
+// Layanan Advokasi route
+Route::get('/advokasi', [LayananAdvokasiController::class, 'index'])->name('advokasi.index');
+// Route::post('/advokasi', [LayananAdvokasiController::class, 'store'])->name('advokasi.store');
+// Route::put('/advokasi/{id}', [LayananAdvokasiController::class, 'update'])->name('advokasi.update');
+// Route::delete('/advokasi/{id}', [LayananAdvokasiController::class, 'destroy'])->name('advokasi.destroy');
