@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             angkatan_data::class,
             prodi_data::class,
             layanan_data::class,
+            infokos_data::class,
         ]);
     }
 }

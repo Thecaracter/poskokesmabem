@@ -10,6 +10,12 @@ class InfoKos extends Model
     use HasFactory;
     protected $table = 'infokos';
 
-    protected $fillable = ['nama_kos', 'nama_cp', 'link_kos', 'link_contact'];
 
+    protected $fillable = [
+        'link_kos_jbr',
+        'link_kos_bws',
+        'link_tanggapan',
+        'nama_cp',
+        'link_contact',
+    ];
 }

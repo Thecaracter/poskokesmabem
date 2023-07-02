@@ -3,6 +3,7 @@
 use App\Http\Controllers\AngkatanController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\InfoKosController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\ProdiController;
@@ -57,3 +58,10 @@ Route::get('/layanan', [LayananController::class, 'index'])->name('layanan.index
 Route::post('/layanan', [LayananController::class, 'store'])->name('layanan.store');
 Route::put('/layanan/{id}', [LayananController::class, 'update'])->name('layanan.update');
 Route::delete('/layanan/{id}', [LayananController::class, 'destroy'])->name('layanan.destroy');
+
+
+// Layanan route
+Route::get('/infokos', [InfoKosController::class, 'index'])->name('infokos.index');
+Route::post('/infokos', [InfoKosController::class, 'store'])->name('infokos.store');
+Route::put('/infokos/{id}', [InfoKosController::class, 'update'])->name('infokos.update');
+Route::delete('/infokos/{id}', [InfoKosController::class, 'destroy'])->name('infokos.destroy');
