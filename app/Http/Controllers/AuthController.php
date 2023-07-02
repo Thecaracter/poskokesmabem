@@ -21,7 +21,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             // Login berhasil
             if (Auth::user()) {
-                return redirect('/');
+                return redirect('/dashboard');
             } else {
                 return redirect('/');
             }

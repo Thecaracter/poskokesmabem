@@ -14,6 +14,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             user_data::class,
+            jurusan_data::class,
+            angkatan_data::class,
+            prodi_data::class,
         ]);
     }
 }
