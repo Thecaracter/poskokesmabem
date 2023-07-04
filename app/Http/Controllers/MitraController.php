@@ -85,11 +85,11 @@ class MitraController extends Controller
                 }
             }
 
-            $mitra->foto->move(public_path('imagesmitra'), $imageName);
+            $request->foto->move(public_path('imagesmitra'), $imageName);
             $mitra->foto = $imageName;
         }
 
-        $mitra->nama_beasiswa = $request->nama_beasiswa;
+        $mitra->nama_mitra = $request->nama_mitra;
         $mitra->save();
 
         return redirect()->route('mitra.index')->with('success', 'Mitra updated successfully.');
