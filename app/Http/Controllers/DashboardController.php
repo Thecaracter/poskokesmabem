@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Beasiswa;
 use App\Models\InfoKos;
 use App\Models\Jurusan;
 use App\Models\LayananAdvokasi;
@@ -16,9 +17,9 @@ class DashboardController extends Controller
         $jurusanCount = Jurusan::count();
         $advokasiCount = LayananAdvokasi::count();
         $mitraCount = Mitra::count();
-        $partnerCount = Partner::count();
+        $beasiswaCount = Beasiswa::count();
 
 
-        return view('admin.dashboard', compact('jurusanCount', 'advokasiCount', 'mitraCount', 'partnerCount'));
+        return view('admin.dashboard', compact('jurusanCount', 'advokasiCount', 'mitraCount', 'beasiswaCount'));
     }
 }
