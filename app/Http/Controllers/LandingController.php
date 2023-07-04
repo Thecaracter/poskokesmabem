@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Beasiswa;
+use App\Models\InfoKos;
 use App\Models\LayananAdvokasi;
 use App\Models\Mitra;
 use App\Models\StrukturPengurus;
@@ -21,7 +22,8 @@ class LandingController extends Controller
         $layananCount = LayananAdvokasi::count();
         $pengurusCount = StrukturPengurus::count();
         $pengurus = StrukturPengurus::all();
-        return view('landing', compact('beasiswas', 'mitra', 'beasiswaCount', 'layananCount', 'pengurusCount', 'pengurus'));
+        $infokos = InfoKos::all();
+        return view('landing', compact('beasiswas', 'mitra', 'beasiswaCount', 'layananCount', 'pengurusCount', 'pengurus', 'infokos'));
     }
 
     /**

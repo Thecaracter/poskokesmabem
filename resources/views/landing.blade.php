@@ -90,6 +90,9 @@
                                         <a class="page-scroll" href="#mitra">Mitra</a>
                                     </li>
                                     <li>
+                                        <a class="page-scroll" href="#infokos">Info Kos</a>
+                                    </li>
+                                    <li>
                                         <a class="page-scroll" href="#contact">Contact</a>
                                     </li>
                                     <li>
@@ -180,7 +183,7 @@
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h1 class="title1">Posko Kesma</h1>
+                                    <h1 class="title1">Posko Kesma </h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
@@ -315,6 +318,41 @@
     <br>
     <br>
     <!-- End Mitra area -->
+    <!-- Start Info Kos area -->
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+            <h2 style="margin-top: -10px;">Info Kos</h2>
+        </div>
+    </div>
+    <div id="infokos" class="row" style="display: flex; justify-content: center;">
+        <div class="col-md-10 col-sm-10 col-xs-15" style="display: flex; justify-content: center;">
+            <div class="faq-details">
+                <div class="card mx-auto align-items-center justify-content-center"
+                    style="width: 25rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center; background-color: #f8f9fa;">
+                    <div class="card-body">
+                        @foreach ($infokos as $info)
+                            <p class="card-text">
+                                <strong>Link Kos JBR:</strong><br><br>
+                                <a class="btn btn-primary" href="{{ $info->link_kos_jbr }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a><br>
+                                <strong>Link Kos BWS:</strong><br><br>
+                                <a class="btn btn-primary" href="{{ $info->link_kos_bws }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a><br>
+                                <strong>Link Tanggapan:</strong><br><br>
+                                <a class="btn btn-primary" href="{{ $info->link_tanggapan }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a><br>
+                                <strong>Link Contact: {{ $info->nama_cp }}</strong><br><br>
+                                <a class="btn btn-primary" href="{{ $info->link_contact }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a>
+                            </p>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- end Info Kos area -->
     <!-- our-skill-area start -->
     <div class="our-skill-area fix hidden-sm">
         <div class="test-overly"></div>
@@ -378,12 +416,12 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
-                        <h2>Mengapa Harus Memilih Kami</h2>
+                        <h2>FAQ</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-11 col-sm-11 col-xs-15">
                     <div class="faq-details">
                         <div class="panel-group" id="accordion">
                             <!-- Panel Default -->
@@ -466,82 +504,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="tab-menu">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active">
-                                <a href="#p-view-1" role="tab" data-toggle="tab">Project</a>
-                            </li>
-                            <li>
-                                <a href="#p-view-2" role="tab" data-toggle="tab">Planning</a>
-                            </li>
-                            <li>
-                                <a href="#p-view-3" role="tab" data-toggle="tab">Success</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="p-view-1">
-                            <div class="tab-inner">
-                                <div class="event-content head-team">
-                                    <h4>Project</h4>
-                                    <p>
-                                        KSP Makmur menawarkan proses peminjaman yang mudah. Kemudahan bagi anggota
-                                        untuk
-                                        mendapatkan pinjaman dan modal usaha.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="p-view-2">
-                            <div class="tab-inner">
-                                <div class="event-content head-team">
-                                    <h4>Planning</h4>
-                                    <p>
-                                        1. Pengurus bersama karyawan menyusun rencana strategis dan taktis baik
-                                        untuk
-                                        jangka panjang maupun jangka pendek.
-                                    </p>
-                                    <p>
-                                        2. Pengurus meminta karyawan menyusun garis besar program operasional.
-                                    </p>
-                                    <p>
-                                        3. Karyawan juga membuat anggaran untuk mencapai hasil yang dikendaki, tanpa
-                                        mengabaikan struktur keuangan yang ada.
-                                    </p>
-                                    <p>
-                                        4. Berdasarkan rencana yang ada, dibuatlah kebijakan sebagai pedoman seluruh
-                                        pelaksanaan.
-                                    </p>
-                                    <p>
-                                        5. Secara bersama menetapkan kebijakan personalia, karyawan usaha keuangan
-                                        dan
-                                        anggota guna mencapai tujuan yang telah ditetapkan.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="p-view-3">
-                            <div class="tab-inner">
-                                <div class="event-content head-team">
-                                    <h4>Success</h4>
-                                    <p>
-                                        1. Konsep bisnis yang menjelaskan secara rinci koperasi sebagai badan usaha,
-                                        struktur organisasi, produk dan jasa pelayanan yang dikelola.
-                                    </p>
-                                    <p>
-                                        2. Market, yang membahas dan menganalisa pasar konsumen potensial.
-                                    </p>
-                                    <p>
-                                        3. Finansial, meliputi estimasi pendapatan dan arus kas, neraca serta rasio
-                                        keuangan lainnya.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- end Row -->
         </div>
@@ -569,8 +531,6 @@
         </div>
     </div>
     <!-- End Wellcome Area -->
-    <br>
-    <br>
 
     <!-- Start reviews Area -->
     <div class="reviews-area hidden-xs">
