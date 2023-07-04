@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Koperasi Simpan Pinjam</title>
+    <title>Posko Kesma</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -586,7 +586,7 @@
     </div>
     <!-- End reviews Area -->
 
-    <!-- Start portfolio Area -->
+    {{-- <!-- Start portfolio Area -->
     <div id="portfolio" class="portfolio-area area-padding fix">
         <div class="container">
             <div class="row">
@@ -734,9 +734,9 @@
             </div>
         </div>
     </div>
-    <!-- awesome-portfolio end -->
+    <!-- awesome-portfolio end --> --}}
 
-    <!-- Start Testimonials -->
+    <!-- Start Pengurus -->
     <div class="testimonials-area text-center">
         <div class="testi-inner area-padding">
             <div class="testi-overly"></div>
@@ -772,66 +772,8 @@
             </div>
         </div>
     </div>
-    <!-- End Testimonials -->
+    <!-- End Pengurus -->
 
-    {{-- 
-    <!-- Start Testimonials -->
-    <div class="testimonials-area">
-        <div class="testi-inner area-padding">
-            <div class="testi-overly"></div>
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <!-- Start testimonials Start -->
-                        <div class="testimonial-content text-center">
-                            <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
-                            <!-- start testimonial carousel -->
-                            <div class="testimonial-carousel">
-                                <div class="single-testi">
-                                    <div class="testi-text">
-                                        <p>
-                                            KSP Makmur membantu saya dalam mendirikan usaha dengan program pinjaman,
-                                            <br>kemudian saya salurkan untuk membangun usaha yang saya miliki
-                                        </p>
-                                        <h6>-Anindita-</h6>
-                                    </div>
-                                </div>
-                                <!-- End single item -->
-                                <div class="single-testi">
-                                    <div class="testi-text">
-                                        <p>
-                                            Koperasi simpan pinjam bisa memberikan solusi bagi setiap orang yang
-                                            membutuhkan bantuan dalam masalah perekonomian.
-                                            <br>Dengan alasan tersebut, maka koperasi semakin berkembang dan
-                                            disukai.
-                                        </p>
-                                        <h6>-Maulana-</h6>
-                                    </div>
-                                </div>
-                                <!-- End single item -->
-                                <div class="single-testi">
-                                    <div class="testi-text">
-                                        <p>
-                                            Koperasi simpan pinjam menawarkan pinjaman dengan syarat yang mudah dan
-                                            bunga yang sangat ringan bagi anggotanya.
-                                            <br>Dengan kondisi seperti ini, maka para anggota yang hanya memiliki
-                                            usaha
-                                            kecil-kecilan tidak akan merasa dipersulit.
-                                        </p>
-                                        <h6>-Surya-</h6>
-                                    </div>
-                                </div>
-                                <!-- End single item -->
-                            </div>
-                        </div>
-                        <!-- End testimonials end -->
-                    </div>
-                    <!-- End Right Feature -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonials --> --}}
     <!-- Start contact Area -->
     <div id="contact" class="contact-area">
         <div class="contact-inner area-padding">
