@@ -87,13 +87,13 @@
                                         <a class="page-scroll" href="#beasiswa">Beasiswa</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#portfolio">Gallery</a>
+                                        <a class="page-scroll" href="#mitra">Mitra</a>
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#contact">Contact</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="login.php">Login</a>
+                                        <a class="page-scroll" href="/login">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -300,7 +300,7 @@
         </div>
     </div>
     <br>
-    <div id="beasiswa" class="owl-carousel owl-theme"
+    <div id="mitra" class="owl-carousel owl-theme"
         style="display: flex; justify-content: center; background-color: #f2f7ff;padding-bottom: 80px; ">
         @foreach ($mitra as $item)
             <div class="item" style="text-align: center; margin: 0 10px;">
@@ -569,7 +569,8 @@
         </div>
     </div>
     <!-- End Wellcome Area -->
-
+    <br>
+    <br>
 
     <!-- Start reviews Area -->
     <div class="reviews-area hidden-xs">
