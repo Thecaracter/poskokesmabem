@@ -93,7 +93,7 @@
                                         <a class="page-scroll" href="#contact">Contact</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="/login">Login</a>
+                                        <a class="page-scroll" href="/masuk">Login</a>
                                     </li>
                                 </ul>
                             </div>
