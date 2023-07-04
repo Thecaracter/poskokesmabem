@@ -11,13 +11,13 @@
                 <a href="/dashboard" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li
-                class="dropdown {{ Request::path() === 'user' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'mitra' || Request::path() === 'prodi' || Request::path() === 'beasiswa' || Request::path() === 'layanan' || Request::path() === 'infokos' ? 'active' : '' }}">
+                class="dropdown {{ Request::path() === 'pengurus' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'mitra' || Request::path() === 'prodi' || Request::path() === 'beasiswa' || Request::path() === 'layanan' || Request::path() === 'infokos' ? 'active' : '' }}">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i
                         data-feather="briefcase"></i><span>Master</span></a>
                 <ul class="dropdown-menu">
-                    {{-- <li class="dropdown {{ Request::path() === 'user' ? 'active' : '' }}"><a class="nav-link"
-                            href="/user"><i data-feather="user"></i><span>User</span></a>
-                    </li> --}}
+                    <li class="dropdown {{ Request::path() === 'pengurus' ? 'active' : '' }}"><a class="nav-link"
+                            href="/pengurus"><i data-feather="user"></i><span>Pengurus</span></a>
+                    </li>
                     <li class="dropdown {{ Request::path() === 'angkatan' ? 'active' : '' }}"><a class="nav-link"
                             href="/angkatan"><i data-feather="bookmark"></i><span>Angkatan</span></a>
                     </li>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Mitra;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class MitraController extends Controller
 {
@@ -29,17 +30,20 @@ class MitraController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'link_mitra' => 'required',
-            'nama_cp' => 'required',
-            'link_cp' => 'required',
+        $request->validate([
+            'nama_mitra' => 'required',
+            'foto' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        // Create a new Mitra record
-        Mitra::create($validatedData);
+        $imageName = time() . '.' . $request->foto->extension();
+        $request->foto->move(public_path('imagesmitra'), $imageName);
 
-        // Redirect to the index page with a success message
-        return redirect()->route('mitra.index')->with('success', 'Mitra created successfully.');
+        Mitra::create([
+            'nama_mitra' => $request->nama_mitra,
+            'foto' => $imageName,
+        ]);
+
+        return redirect()->route('mitra.index')->with('success', 'Beasiswa created successfully.');
     }
 
     /**
@@ -63,25 +67,31 @@ class MitraController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        // Find the Mitra record by its ID
-        $mitra = Mitra::find($id);
-
-        // If the Mitra record is not found, redirect back with an error message
-        if (!$mitra) {
-            return redirect()->back()->with('error', 'Mitra not found.');
-        }
-
-        // Validate the input data
-        $validatedData = $request->validate([
-            'link_mitra' => 'required',
-            'nama_cp' => 'required',
-            'link_cp' => 'required',
+        $request->validate([
+            'nama_mitra' => 'required',
+            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        // Update the Mitra record
-        $mitra->update($validatedData);
+        $mitra = Mitra::findOrFail($id);
 
-        // Redirect to the index page with a success message
+        if ($request->hasFile('foto')) {
+            $imageName = time() . '.' . $request->foto->extension();
+
+            // Menghapus gambar lama jika ada
+            if ($mitra->foto) {
+                $imagePath = public_path('imagesmitra/' . $mitra->foto);
+                if (File::exists($imagePath)) {
+                    File::delete($imagePath);
+                }
+            }
+
+            $mitra->foto->move(public_path('imagesmitra'), $imageName);
+            $mitra->foto = $imageName;
+        }
+
+        $mitra->nama_beasiswa = $request->nama_beasiswa;
+        $mitra->save();
+
         return redirect()->route('mitra.index')->with('success', 'Mitra updated successfully.');
     }
 
@@ -91,18 +101,16 @@ class MitraController extends Controller
      */
     public function destroy(string $id)
     {
-        // Find the Mitra record by its ID
-        $mitra = Mitra::find($id);
+        $mitra = Mitra::findOrFail($id);
 
-        // If the Mitra record is not found, redirect back with an error message
-        if (!$mitra) {
-            return redirect()->back()->with('error', 'Mitra not found.');
+        // Menghapus file terkait jika ada
+        $fotoPath = public_path('imagesmitra/' . $mitra->foto);
+        if (File::exists($fotoPath)) {
+            File::delete($fotoPath);
         }
 
-        // Delete the Mitra record
         $mitra->delete();
 
-        // Redirect to the index page with a success message
         return redirect()->route('mitra.index')->with('success', 'Mitra deleted successfully.');
     }
 }

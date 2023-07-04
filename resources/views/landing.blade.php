@@ -66,7 +66,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <a class="navbar-brand page-scroll sticky-logo" href="/">
                                     <!--<img src="img/logo_koperasi.png" width="30px" height="30px" >-->
                                     <h1><span>Posko</span> Kesma</h1>
                                     <!-- Uncomment below if you prefer to use an image logo -->
@@ -84,7 +84,7 @@
                                         <a class="page-scroll" href="#about">About</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#services">Services</a>
+                                        <a class="page-scroll" href="#beasiswa">Beasiswa</a>
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#portfolio">Gallery</a>
@@ -126,11 +126,11 @@
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h1 class="title1">Koperasi Simpan Pinjam</h1>
+                                    <h1 class="title1">Posko Kesma</h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">Makmur</h1>
+                                    <h1 class="title2">Posko Kesejahteraan Mahasiswa</h1>
                                 </div>
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
@@ -153,11 +153,11 @@
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h1 class="title1">Koperasi Simpan Pinjam </h1>
+                                    <h1 class="title1">Posko Kesma</h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">Makmur</h1>
+                                    <h1 class="title2">Posko Kesma</h1>
                                 </div>
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
@@ -266,78 +266,55 @@
     </div>
     <!-- End About area -->
 
-    {{-- <!-- Start Service area -->
-    <div id="services" class="services-area area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline services-head text-center">
-                        <h2>Pengelolaan Simpanan Anggota</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="services-contents">
-                    <!-- Start Left services -->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="about-move">
-                            <div class="services-details">
-                                <div class="single-services">
-                                    <a class="services-icon" href="#">
-                                        <i class="fa fa-money"></i>
-                                    </a>
-                                    <h4>Simpanan Pokok</h4>
-                                    <p>
-                                        Simpanan yang pertama kali dibayarkan oleh anggota koperasi saat bergabung
-                                        menjadi anggota
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end about-details -->
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="about-move">
-                            <div class="services-details">
-                                <div class="single-services">
-                                    <a class="services-icon" href="#">
-                                        <i class="fa fa-handshake-o"></i>
-                                    </a>
-                                    <h4>Simpanan Wajib</h4>
-                                    <p>
-                                        Simpanan bersifat wajib, yang harus dibayarkan semua anggota setiap bulan
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end about-details -->
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <!-- end col-md-4 -->
-                        <div class=" about-move">
-                            <div class="services-details">
-                                <div class="single-services">
-                                    <a class="services-icon" href="#">
-                                        <i class="fa fa-calendar"></i>
-                                    </a>
-                                    <h4>Simpanan Sukarela</h4>
-                                    <p>
-                                        Simpanan Sukarela yang mirip seperti tabungan, dengan jumlah dan waktu simpanan
-                                        tidak ditentukan
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end about-details -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <!-- Start Beasiswa area -->
+    <br>
+    <br>
+    <br>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+            <h2>Info Beasiswa</h2>
         </div>
     </div>
+    <br>
+    <div id="beasiswa" class="owl-carousel owl-theme" style="display: flex; justify-content: center;">
+        @foreach ($beasiswas as $beasiswa)
+            <div class="item" style="text-align: center; margin: 0 10px;">
+                <img src="{{ asset('images/' . $beasiswa->foto) }}" alt="{{ $beasiswa->title }}"
+                    style="max-width: 100%; height: auto;">
+                {{-- <h5 style="margin-top: 10px;">{{ $beasiswa->nama_beasiswa }}</h5>
+                <p>{{ $beasiswa->nama_beasiswa }}</p> --}}
+            </div>
+        @endforeach
     </div>
-    <!-- End Service area --> --}}
-
+    <br>
+    <br>
+    <br>
+    <!-- End Beasiswa area -->
+    <!-- Start Mitra area -->
+    <br>
+    <br>
+    <br>
+    <div class="col-md-12 col-sm-12 col-xs-12" style="padding-top: 80px; background-color: #f2f7ff;">
+        <div class="section-headline text-center">
+            <h2 style="margin-top: -10px;">Info Mitra Kesma</h2>
+        </div>
+    </div>
+    <br>
+    <div id="beasiswa" class="owl-carousel owl-theme"
+        style="display: flex; justify-content: center; background-color: #f2f7ff;padding-bottom: 80px; ">
+        @foreach ($mitra as $item)
+            <div class="item" style="text-align: center; margin: 0 10px;">
+                <img src="{{ asset('imagesmitra/' . $item->foto) }}" alt="{{ $item->title }}"
+                    style="max-width: 100%; height: auto;">
+                <h5 style="margin-top: 10px;">{{ $item->nama_beasiswa }}</h5>
+                <p>{{ $item->nama_beasiswa }}</p>
+            </div>
+        @endforeach
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- End Mitra area -->
     <!-- our-skill-area start -->
     <div class="our-skill-area fix hidden-sm">
         <div class="test-overly"></div>
@@ -351,10 +328,10 @@
                             <div class="single-skill">
                                 <div class="diff-ournumbers" id="diffnumbers-1">
                                     <p class="counter-count" style="font-size:70px;color:white;">
-                                        10
+                                        {{ $layananCount }}
                                     </p>
                                     <br>
-                                    <h2>Anggota</h2>
+                                    <h2>Advokasi Diterima</h2>
                                 </div>
                             </div>
                         </div>
@@ -366,10 +343,10 @@
                             <div class="diff-ournumbers" id="diffnumbers-1">
 
                                 <p class="counter-count" style="font-size:70px;color:white;">
-                                    2
+                                    {{ $beasiswaCount }}
                                 </p>
                                 <br>
-                                <h2>Pengurus</h2>
+                                <h2>Beasiswa</h2>
                             </div>
                         </div>
                     </div>
@@ -380,10 +357,10 @@
                             <div class="diff-ournumbers" id="diffnumbers-1">
 
                                 <p class="counter-count" style="font-size:70px;color:white;">
-                                    5
+                                    {{ $pengurusCount }}
                                 </p>
                                 <br>
-                                <h2>Pinjaman</h2>
+                                <h2>Pengurus</h2>
                             </div>
                         </div>
                     </div>
@@ -392,13 +369,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        $(".counter-count").counterUp({
-            delay: 50,
-            time: 2000
-        });
-    </script>
-    </div>
+
     <!-- our-skill-area end -->
 
     <!-- Faq area start -->
@@ -428,7 +399,8 @@
                                 <div id="check1" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>
-                                            Kami memberikan jasa simpanan 10% per tahun, yang dibayarkan setiap bulan.
+                                            Kami memberikan jasa simpanan 10% per tahun, yang dibayarkan setiap
+                                            bulan.
                                         </p>
                                     </div>
                                 </div>
@@ -515,7 +487,8 @@
                                 <div class="event-content head-team">
                                     <h4>Project</h4>
                                     <p>
-                                        KSP Makmur menawarkan proses peminjaman yang mudah. Kemudahan bagi anggota untuk
+                                        KSP Makmur menawarkan proses peminjaman yang mudah. Kemudahan bagi anggota
+                                        untuk
                                         mendapatkan pinjaman dan modal usaha.
                                     </p>
                                 </div>
@@ -526,7 +499,8 @@
                                 <div class="event-content head-team">
                                     <h4>Planning</h4>
                                     <p>
-                                        1. Pengurus bersama karyawan menyusun rencana strategis dan taktis baik untuk
+                                        1. Pengurus bersama karyawan menyusun rencana strategis dan taktis baik
+                                        untuk
                                         jangka panjang maupun jangka pendek.
                                     </p>
                                     <p>
@@ -541,7 +515,8 @@
                                         pelaksanaan.
                                     </p>
                                     <p>
-                                        5. Secara bersama menetapkan kebijakan personalia, karyawan usaha keuangan dan
+                                        5. Secara bersama menetapkan kebijakan personalia, karyawan usaha keuangan
+                                        dan
                                         anggota guna mencapai tujuan yang telah ditetapkan.
                                     </p>
                                 </div>
@@ -648,10 +623,12 @@
                     <div class="col-md-4 col-sm-4 col-xs-12 pro sos">
                         <div class="single-awesome-project">
                             <div class="awesome-img">
-                                <a href="#"><img src="img/portfolio/kunjungan.jpg" alt="" /></a>
+                                <a href="#"><img src="landingassets/img/portfolio/kunjungan.jpg"
+                                        alt="" /></a>
                                 <div class="add-actions text-center">
                                     <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="img/portfolio/kunjungan.jpg">
+                                        <a class="venobox" data-gall="myGallery"
+                                            href="landingassets/img/portfolio/kunjungan.jpg">
                                             <h4>Kunjungan Dinas Koperasi UMKM</h4>
                                             <span>07 Oktober 2021</span>
                                         </a>
@@ -665,10 +642,12 @@
                     <div class="col-md-4 col-sm-4 col-xs-12 rat">
                         <div class="single-awesome-project">
                             <div class="awesome-img">
-                                <a href="#"><img src="img/portfolio/rat2.jpg" alt="" /></a>
+                                <a href="#"><img src="landingassets/img/portfolio/rat2.jpg"
+                                        alt="" /></a>
                                 <div class="add-actions text-center">
                                     <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="img/portfolio/rat2.JPG">
+                                        <a class="venobox" data-gall="myGallery"
+                                            href="landingassets/img/portfolio/rat2.JPG">
                                             <h4>Rapat Anggota Tahunan</h4>
                                             <span>2019</span>
                                         </a>
@@ -682,10 +661,12 @@
                     <div class="col-md-4 col-sm-4 col-xs-12 rat">
                         <div class="single-awesome-project">
                             <div class="awesome-img">
-                                <a href="#"><img src="img/portfolio/rat1.JPG" alt="" /></a>
+                                <a href="#"><img src="landingassets/img/portfolio/rat1.JPG"
+                                        alt="" /></a>
                                 <div class="add-actions text-center">
                                     <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="img/portfolio/rat1.JPG">
+                                        <a class="venobox" data-gall="myGallery"
+                                            href="landingassets/img/portfolio/rat1.JPG">
                                             <h4>Rapat Anggota Tahun</h4>
                                             <span>2021</span>
                                         </a>
@@ -699,10 +680,12 @@
                     <div class="col-md-4 col-sm-4 col-xs-12 pro">
                         <div class="single-awesome-project">
                             <div class="awesome-img">
-                                <a href="#"><img src="img/portfolio/program.jpg" alt="" /></a>
+                                <a href="#"><img src="landingassets/img/portfolio/program.jpg"
+                                        alt="" /></a>
                                 <div class="add-actions text-center">
                                     <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="img/portfolio/program.jpg">
+                                        <a class="venobox" data-gall="myGallery"
+                                            href="landingassets/img/portfolio/program.jpg">
                                             <h4>Pelatihan Internet Marketing</h4>
                                             <span>2020</span>
                                         </a>
@@ -716,7 +699,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12 sos">
                         <div class="single-awesome-project">
                             <div class="awesome-img">
-                                <a href="#"><img src="img/portfolio/s2.jpg" alt="" /></a>
+                                <a href="#"><img src="landingassets/img/portfolio/s2.jpg" alt="" /></a>
                                 <div class="add-actions text-center text-center">
                                     <div class="project-dec">
                                         <a class="venobox" data-gall="myGallery" href="img/portfolio/s2.jpg">
@@ -733,10 +716,11 @@
                     <div class="col-md-4 col-sm-4 col-xs-12 sos">
                         <div class="single-awesome-project">
                             <div class="awesome-img">
-                                <a href="#"><img src="img/portfolio/s1.JPG" alt="" /></a>
+                                <a href="#"><img src="landingassets/img/portfolio/s1.JPG" alt="" /></a>
                                 <div class="add-actions text-center">
                                     <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="img/portfolio/s1.JPG">
+                                        <a class="venobox" data-gall="myGallery"
+                                            href="landingassets/img/portfolio/s1.JPG">
                                             <h4>Santunan Anak Yatim</h4>
                                             <span>27 Juni 2021</span>
                                         </a>
@@ -752,6 +736,45 @@
     </div>
     <!-- awesome-portfolio end -->
 
+    <!-- Start Testimonials -->
+    <div class="testimonials-area text-center">
+        <div class="testi-inner area-padding">
+            <div class="testi-overly"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <!-- Start testimonials Start -->
+                        <div class="testimonial-content">
+                            {{-- <a class="quate" href="#"><i class="fa fa-quote-right"></i></a> --}}
+                            <!-- start testimonial carousel -->
+                            <div class="testimonial-carousel">
+                                @foreach ($pengurus as $p)
+                                    <div class="single-testi">
+                                        <div class="testi-text">
+                                            <img src="{{ asset('uploads/' . $p->foto) }}" alt="Testimonial Image"
+                                                style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                                            <p>{{ $p->nama }}</p>
+                                            <h6>{{ $p->asal }}</h6>
+                                            <h6>{{ $p->jabatan }}</h6>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        console.log({{ $p->foto }})
+                                    </script>
+                                    <!-- End single item -->
+                                @endforeach
+                            </div>
+                        </div>
+                        <!-- End testimonials end -->
+                    </div>
+                    <!-- End Right Feature -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+
+    {{-- 
     <!-- Start Testimonials -->
     <div class="testimonials-area">
         <div class="testi-inner area-padding">
@@ -779,7 +802,8 @@
                                         <p>
                                             Koperasi simpan pinjam bisa memberikan solusi bagi setiap orang yang
                                             membutuhkan bantuan dalam masalah perekonomian.
-                                            <br>Dengan alasan tersebut, maka koperasi semakin berkembang dan disukai.
+                                            <br>Dengan alasan tersebut, maka koperasi semakin berkembang dan
+                                            disukai.
                                         </p>
                                         <h6>-Maulana-</h6>
                                     </div>
@@ -790,7 +814,8 @@
                                         <p>
                                             Koperasi simpan pinjam menawarkan pinjaman dengan syarat yang mudah dan
                                             bunga yang sangat ringan bagi anggotanya.
-                                            <br>Dengan kondisi seperti ini, maka para anggota yang hanya memiliki usaha
+                                            <br>Dengan kondisi seperti ini, maka para anggota yang hanya memiliki
+                                            usaha
                                             kecil-kecilan tidak akan merasa dipersulit.
                                         </p>
                                         <h6>-Surya-</h6>
@@ -806,7 +831,7 @@
             </div>
         </div>
     </div>
-    <!-- End Testimonials -->
+    <!-- End Testimonials --> --}}
     <!-- Start contact Area -->
     <div id="contact" class="contact-area">
         <div class="contact-inner area-padding">
@@ -947,7 +972,30 @@
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
-
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                },
+                nav: true,
+                navText: [
+                    '<i class="icon-left"></i>', // Replace with the appropriate icon HTML or SVG for the left icon
+                    '<i class="icon-right"></i>' // Replace with the appropriate icon HTML or SVG for the right icon
+                ]
+            });
+        });
+    </script>
     <script src="landingassets/js/main.js"></script>
 </body>
 

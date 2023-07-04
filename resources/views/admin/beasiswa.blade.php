@@ -24,6 +24,10 @@
                             </div>
 
                             <br>
+                            @if ($errors->has('foto'))
+                                <div class="text-danger">{{ $errors->first('foto') }}</div>
+                            @endif
+                            <br>
 
                             <div class="table-responsive">
                                 <table id="example" class="table table-bordered zero-configuration">

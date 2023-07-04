@@ -12,9 +12,8 @@ return new class extends Migration {
     {
         Schema::create('mitra', function (Blueprint $table) {
             $table->id();
-            $table->text('link_mitra');
-            $table->string('nama_cp');
-            $table->text('link_cp');
+            $table->string('nama_mitra');
+            $table->string('foto');
             $table->timestamps();
         });
     }

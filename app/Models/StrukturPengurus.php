@@ -10,6 +10,6 @@ class StrukturPengurus extends Model
     use HasFactory;
     protected $table = 'struktur_pengurus';
 
-    protected $fillable = ['nama', 'jabatan', 'motto', 'foto'];
+    protected $fillable = ['nama', 'jabatan', 'asal', 'foto'];
 
 }

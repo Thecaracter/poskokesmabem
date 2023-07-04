@@ -6,9 +6,11 @@ use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InfoKosController;
 use App\Http\Controllers\JurusanController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LayananAdvokasiController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\MitraController;
+use App\Http\Controllers\PengurusController;
 use App\Http\Controllers\ProdiController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,10 +25,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
-
+// Route::get('/', function () {
+//     return view('landing');
+// });
+Route::get('/', [LandingController::class, 'index'])->name('landing.index');
 //login routes
 Route::post('/masuk', [AuthController::class, 'login'])->name('login');
 Route::get('/masuk', [AuthController::class, 'showLoginForm']);
@@ -42,6 +44,12 @@ Route::middleware('isLogin')->group(function () {
     Route::post('/angkatan', [AngkatanController::class, 'store'])->name('angkatan.store');
     Route::put('/angkatan/{id}', [AngkatanController::class, 'update'])->name('angkatan.update');
     Route::delete('/angkatan/{id}', [AngkatanController::class, 'destroy'])->name('angkatan.destroy');
+
+    // Pengurus route
+    Route::get('/pengurus', [PengurusController::class, 'index'])->name('pengurus.index');
+    Route::post('/pengurus', [PengurusController::class, 'store'])->name('pengurus.store');
+    Route::put('/pengurus/{id}', [PengurusController::class, 'update'])->name('pengurus.update');
+    Route::delete('/pengurus/{id}', [PengurusController::class, 'destroy'])->name('pengurus.destroy');
 
     // Jurusan route
     Route::get('/jurusan', [JurusanController::class, 'index'])->name('jurusan.index');
