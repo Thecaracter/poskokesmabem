@@ -76,7 +76,7 @@ class LandingController extends Controller
             return redirect()->back()->with('success', 'Data berhasil disimpan.');
         } catch (\Exception $e) {
             // Tangkap pengecualian dan berikan pesan error
-            dd($e->getMessage());
+            return redirect()->back()->with('error', 'Terjadi kesalahan saat menyimpan data.');
         }
     }
 

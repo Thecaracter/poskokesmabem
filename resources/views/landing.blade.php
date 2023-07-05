@@ -803,7 +803,7 @@
         <script src="landingassets/lib/appear/jquery.appear.js"></script>
         <script src="landingassets/lib/isotope/isotope.pkgd.min.js"></script>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
 
@@ -856,7 +856,30 @@
                 color: #333;
             }
         </style>
-        <!-- Inisialisasi Select2 -->
+        @if (session('success'))
+            <script>
+                Swal.fire({
+                    title: 'Sukses',
+                    text: '{{ session('success') }}',
+                    icon: 'success',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            </script>
+        @endif
+
+        @if (session('error'))
+            <script>
+                Swal.fire({
+                    title: 'Error',
+                    text: '{{ session('error') }}',
+                    icon: 'error',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            </script>
+        @endif
+
 
         <script src="landingassets/js/main.js"></script>
 </body>
