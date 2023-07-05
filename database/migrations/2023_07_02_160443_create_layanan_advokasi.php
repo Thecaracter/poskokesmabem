@@ -13,7 +13,7 @@ return new class extends Migration {
         Schema::create('layanan_advokasi', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('email');
+            $table->string('no_telp');
             $table->string('kritik_saran');
             $table->timestamps();
         });

@@ -16,7 +16,7 @@ class Advokasi_data extends Seeder
         $layananAdvokasiData = [
             [
                 'nama' => 'Rizqi',
-                'email' => 'Rizqi@example.com',
+                'no_telp' => '08883662780',
                 'kritik_saran' => 'Lorem ipsum dolor sit amet',
                 'angkatan_id' => 1,
                 'jurusan_id' => 1,
@@ -25,7 +25,7 @@ class Advokasi_data extends Seeder
             ],
             [
                 'nama' => 'Jane Smith',
-                'email' => 'janesmith@example.com',
+                'no_telp' => '0863552176319',
                 'kritik_saran' => 'Lorem ipsum dolor sit amet',
                 'angkatan_id' => 2,
                 'jurusan_id' => 2,

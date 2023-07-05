@@ -41,6 +41,12 @@
     <!-- Responsive Stylesheet File -->
     <link href="landingassets/css/responsive.css" rel="stylesheet">
 
+    <!-- Tambahkan link CSS dan JS dari Select2 -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -547,156 +553,6 @@
     </div>
     <!-- End reviews Area -->
 
-    {{-- <!-- Start portfolio Area -->
-    <div id="portfolio" class="portfolio-area area-padding fix">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline text-center">
-                        <h2>Gallery</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Start Portfolio -page -->
-                <div class="awesome-project-1 fix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="awesome-menu ">
-                            <ul class="project-menu">
-                                <li>
-                                    <a href="#" class="active" data-filter="*">All</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".rat">RAT</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".pro">Proker</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".sos">Sosial</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="awesome-project-content">
-                    <!-- single-awesome-project start -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 pro sos">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="landingassets/img/portfolio/kunjungan.jpg"
-                                        alt="" /></a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery"
-                                            href="landingassets/img/portfolio/kunjungan.jpg">
-                                            <h4>Kunjungan Dinas Koperasi UMKM</h4>
-                                            <span>07 Oktober 2021</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-awesome-project end -->
-                    <!-- single-awesome-project start -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 rat">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="landingassets/img/portfolio/rat2.jpg"
-                                        alt="" /></a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery"
-                                            href="landingassets/img/portfolio/rat2.JPG">
-                                            <h4>Rapat Anggota Tahunan</h4>
-                                            <span>2019</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-awesome-project end -->
-                    <!-- single-awesome-project start -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 rat">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="landingassets/img/portfolio/rat1.JPG"
-                                        alt="" /></a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery"
-                                            href="landingassets/img/portfolio/rat1.JPG">
-                                            <h4>Rapat Anggota Tahun</h4>
-                                            <span>2021</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-awesome-project end -->
-                    <!-- single-awesome-project start -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 pro">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="landingassets/img/portfolio/program.jpg"
-                                        alt="" /></a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery"
-                                            href="landingassets/img/portfolio/program.jpg">
-                                            <h4>Pelatihan Internet Marketing</h4>
-                                            <span>2020</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-awesome-project end -->
-                    <!-- single-awesome-project start -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 sos">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="landingassets/img/portfolio/s2.jpg" alt="" /></a>
-                                <div class="add-actions text-center text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery" href="img/portfolio/s2.jpg">
-                                            <h4>Peduli Covid-19</h4>
-                                            <span>15 November 2021</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-awesome-project end -->
-                    <!-- single-awesome-project start -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 sos">
-                        <div class="single-awesome-project">
-                            <div class="awesome-img">
-                                <a href="#"><img src="landingassets/img/portfolio/s1.JPG" alt="" /></a>
-                                <div class="add-actions text-center">
-                                    <div class="project-dec">
-                                        <a class="venobox" data-gall="myGallery"
-                                            href="landingassets/img/portfolio/s1.JPG">
-                                            <h4>Santunan Anak Yatim</h4>
-                                            <span>27 Juni 2021</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-awesome-project end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- awesome-portfolio end --> --}}
-
     <!-- Start Pengurus -->
     <div class="testimonials-area text-center">
         <div class="testi-inner area-padding">
@@ -734,172 +590,275 @@
         </div>
     </div>
     <!-- End Pengurus -->
-
-    <!-- Start contact Area -->
-    <div id="contact" class="contact-area">
-        <div class="contact-inner area-padding">
-            <div class="contact-overly"></div>
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-headline text-center">
-                            <h2>Contact us</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Start contact icon column -->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="contact-icon text-center">
-                            <div class="single-icon">
-                                <i class="fa fa-phone"></i></a>
-                                <p>
-                                    Call: (0333) 846328<br>
-                                    <span>Senin - Kamis (08.00 - 14.00)
-                                        <br>Jumat (08.00 - 10.30)
-                                        <br>Sabtu (08.00 - 13.00)</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Start contact icon column -->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="contact-icon text-center">
-                            <div class="single-icon">
-                                <a href="https://gmail.com"><i class="fa fa-envelope-o"></i></a>
-                                <p>
-                                    Email: kspmakmur@gmail.com<br>
-                                    <span>Web: www.kspmakmur.com</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Start contact icon column -->
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="contact-icon text-center">
-                            <div class="single-icon">
-                                <i class="fa fa-map-marker"></i>
-                                <p>
-                                    Jl. Guntur, Dusun Krajan, Genteng Kulon, Kec. Genteng<br>
-                                    <span>Banyuwangi</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <!-- End Left contact -->
-                </div>
-            </div>
+    <br>
+    <br>
+    <!-- Start Polije Curhat -->
+    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px ;margin-bottom: 10px;">
+        <div class="section-headline text-center">
+            <h2>Polije Curhat</h2>
         </div>
     </div>
-    <!-- End Contact Area -->
+    <!-- End Polije Curhat -->
 
-    <!-- Start Footer bottom Area -->
-    <footer>
-        <div class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="footer-content">
-                            <div class="footer-head">
-                                <div class="footer-logo">
-                                    <h2>Koperasi Simpan Pinjam</h2>
+    <!-- Form -->
+    <<div
+        style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f2f2f2;">
+        <form action="{{ route('layanan-advokasi.store') }}" method="POST">
+            @csrf
+            <div style="margin-bottom: 20px;">
+                <label for="name" style="display: block;">Nama:</label>
+                <input type="text" id="name" name="nama" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="phone" style="display: block;">Nomor Telepon:</label>
+                <input type="text" id="phone" name="no_telp" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <div style="width: 48%;">
+                    <label for="department" style="display: block;">Jurusan:</label>
+                    <select id="department" name="jurusan_id" class="form-control select2" required>
+                        <option value="">Pilih Jurusan</option>
+                        @foreach ($jurusan as $j)
+                            <option value="{{ $j->id }}">{{ $j->nama_jurusan }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div style="width: 48%;">
+                    <label for="study-program" style="display: block;">Program Studi:</label>
+                    <select id="study-program" name="prodi_id" class="form-control select2" required>
+                        <option value="">Pilih Program Studi</option>
+                        @foreach ($prodi as $p)
+                            <option value="{{ $p->id }}">{{ $p->nama_prodi }}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="batch" style="display: block;">Angkatan:</label>
+                <select id="batch" name="angkatan_id" class="form-control select2" required>
+                    <option value="">Pilih Angkatan</option>
+                    @foreach ($angkatan as $a)
+                        <option value="{{ $a->id }}">{{ $a->tahun_angkatan }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="service" style="display: block;">Layanan:</label>
+                <select id="service" name="layanan_id" class="form-control select2" required>
+                    <option value="">Pilih Layanan</option>
+                    @foreach ($layanan as $l)
+                        <option value="{{ $l->id }}">{{ $l->nama_layanan }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="feedback" style="display: block;">Kritik dan Saran:</label>
+                <textarea id="feedback" name="kritik_saran" rows="4" required
+                    style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            </div>
+            <button type="submit"
+                style="width: 100%; padding: 10px; background-color: #4CAF50; border: none; color: white; font-weight: bold;">Submit</button>
+        </form>
+        </div>
+        <!-- End Form -->
+        <!-- End Polije Curhat -->
+
+        <!-- Start contact Area -->
+        <div id="contact" class="contact-area">
+            <div class="contact-inner area-padding">
+                <div class="contact-overly"></div>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-headline text-center">
+                                <h2>Contact us</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Start contact icon column -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="contact-icon text-center">
+                                <div class="single-icon">
+                                    <i class="fa fa-phone"></i></a>
+                                    <p>
+                                        Call: (0333) 846328<br>
+                                        <span>Senin - Kamis (08.00 - 14.00)
+                                            <br>Jumat (08.00 - 10.30)
+                                            <br>Sabtu (08.00 - 13.00)</span>
+                                    </p>
                                 </div>
-
-                                <p> </p>
-                                <div class="footer-icons">
-                                    <ul>
-                                        <li>
-                                            <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
+                            </div>
+                        </div>
+                        <!-- Start contact icon column -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="contact-icon text-center">
+                                <div class="single-icon">
+                                    <a href="https://gmail.com"><i class="fa fa-envelope-o"></i></a>
+                                    <p>
+                                        Email: kspmakmur@gmail.com<br>
+                                        <span>Web: www.kspmakmur.com</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start contact icon column -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="contact-icon text-center">
+                                <div class="single-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                    <p>
+                                        Jl. Guntur, Dusun Krajan, Genteng Kulon, Kec. Genteng<br>
+                                        <span>Banyuwangi</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- end single footer -->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="footer-content">
-                            <div class="footer-head" align="right">
-                                <h4>information</h4>
+                    <div class="row">
+
+                        <!-- End Left contact -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Area -->
+
+        <!-- Start Footer bottom Area -->
+        <footer>
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-content">
+                                <div class="footer-head">
+                                    <div class="footer-logo">
+                                        <h2>Koperasi Simpan Pinjam</h2>
+                                    </div>
+
+                                    <p> </p>
+                                    <div class="footer-icons">
+                                        <ul>
+                                            <li>
+                                                <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single footer -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-content">
+                                <div class="footer-head" align="right">
+                                    <h4>information</h4>
+                                    <p>
+                                        Hubungi kami untuk layanan lebih lanjut
+                                    </p>
+                                    <div class="footer-contacts">
+                                        <p><span>Tel:</span> (0333) 846328</p>
+                                        <p><span>Email:</span> kspmakmur@gmail.com</p>
+                                        <p><span>Hari Kerja:</span> (Senin - Sabtu)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright text-center">
                                 <p>
-                                    Hubungi kami untuk layanan lebih lanjut
+                                    &copy; Copyright <strong>KSP Makmur</strong>
                                 </p>
-                                <div class="footer-contacts">
-                                    <p><span>Tel:</span> (0333) 846328</p>
-                                    <p><span>Email:</span> kspmakmur@gmail.com</p>
-                                    <p><span>Hari Kerja:</span> (Senin - Sabtu)</p>
-                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="footer-area-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="copyright text-center">
-                            <p>
-                                &copy; Copyright <strong>KSP Makmur</strong>
-                            </p>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="landingassets/lib/jquery/jquery.min.js"></script>
-    <script src="landingassets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="landingassets/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="landingassets/lib/venobox/venobox.min.js"></script>
-    <script src="landingassets/lib/knob/jquery.knob.js"></script>
-    <script src="landingassets/lib/wow/wow.min.js"></script>
-    <script src="landingassets/lib/parallax/parallax.js"></script>
-    <script src="landingassets/lib/easing/easing.min.js"></script>
-    <script src="landingassets/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-    <script src="landingassets/lib/appear/jquery.appear.js"></script>
-    <script src="landingassets/lib/isotope/isotope.pkgd.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="landingassets/lib/jquery/jquery.min.js"></script>
+        <script src="landingassets/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="landingassets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="landingassets/lib/venobox/venobox.min.js"></script>
+        <script src="landingassets/lib/knob/jquery.knob.js"></script>
+        <script src="landingassets/lib/wow/wow.min.js"></script>
+        <script src="landingassets/lib/parallax/parallax.js"></script>
+        <script src="landingassets/lib/easing/easing.min.js"></script>
+        <script src="landingassets/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+        <script src="landingassets/lib/appear/jquery.appear.js"></script>
+        <script src="landingassets/lib/isotope/isotope.pkgd.min.js"></script>
 
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsive: {
-                    0: {
-                        items: 1
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
+
+        <!-- Contact Form JavaScript File -->
+        {{-- <script src="contactform/contactform.js"></script> --}}
+        <script>
+            $(document).ready(function() {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
                     },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                },
-                nav: true,
-                navText: [
-                    '<i class="icon-left"></i>', // Replace with the appropriate icon HTML or SVG for the left icon
-                    '<i class="icon-right"></i>' // Replace with the appropriate icon HTML or SVG for the right icon
-                ]
+                    nav: true,
+                    navText: [
+                        '<i class="icon-left"></i>', // Replace with the appropriate icon HTML or SVG for the left icon
+                        '<i class="icon-right"></i>' // Replace with the appropriate icon HTML or SVG for the right icon
+                    ]
+                });
             });
-        });
-    </script>
-    <script src="landingassets/js/main.js"></script>
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#department').select2({});
+            });
+            $(document).ready(function() {
+                $('.select2').select2();
+            });
+        </script>
+        <style>
+            .select2-container .select2-selection {
+                height: 40px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                color: #333;
+            }
+        </style>
+        <!-- Inisialisasi Select2 -->
+
+        <script src="landingassets/js/main.js"></script>
 </body>
 
 </html>

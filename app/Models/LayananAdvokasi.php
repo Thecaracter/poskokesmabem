@@ -10,7 +10,7 @@ class LayananAdvokasi extends Model
     use HasFactory;
     protected $table = 'layanan_advokasi';
 
-    protected $fillable = ['nama', 'email', 'kritik_saran'];
+    protected $fillable = ['nama', 'no_telp', 'kritik_saran'];
 
     public function angkatan()
     {

@@ -29,6 +29,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('landing');
 // });
 Route::get('/', [LandingController::class, 'index'])->name('landing.index');
+Route::post('/landing', [LandingController::class, 'store'])->name('layanan-advokasi.store');
 //login routes
 Route::post('/masuk', [AuthController::class, 'login'])->name('login');
 Route::get('/masuk', [AuthController::class, 'showLoginForm']);

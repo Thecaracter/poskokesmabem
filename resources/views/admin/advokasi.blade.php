@@ -36,7 +36,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama</th>
-                                            <th>Email</th>
+                                            <th>No Telephone</th>
                                             <th>Kritik/Saran</th>
                                             <th>Angkatan</th>
                                             <th>Jurusan</th>
@@ -51,7 +51,7 @@
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
                                                 <td>{{ $item->nama }}</td>
-                                                <td>{{ $item->email }}</td>
+                                                <td>{{ $item->no_telp }}</td>
                                                 <td>{{ $item->kritik_saran }}</td>
                                                 <td>{{ $item->angkatan->tahun_angkatan }}</td>
                                                 <td>{{ $item->jurusan->nama_jurusan }}</td>
