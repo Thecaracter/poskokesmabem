@@ -44,6 +44,7 @@
                                             <th>Layanan</th>
                                             <th>Created At</th>
                                             <th>Updated At</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -59,6 +60,16 @@
                                                 <td>{{ $item->layanan->nama_layanan }}</td>
                                                 <td>{{ $item->created_at }}</td>
                                                 <td>{{ $item->updated_at }}</td>
+                                                <td class="align-middle text-center">
+                                                    <form id="deleteForm-{{ $item->id }}" method="post"
+                                                        action="{{ route('advokasi.destroy', $item->id) }}"
+                                                        style="display: inline;">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="button" class="btn btn-danger mx-2"
+                                                            onclick="confirmDelete('{{ $item->id }}')">Delete</button>
+                                                    </form>
+                                                </td>
                                             </tr>
                                         @endforeach
                                     </tbody>
@@ -71,6 +82,24 @@
         </div>
     </div>
 
+    <script>
+        function confirmDelete(userId) {
+            Swal.fire({
+                title: 'Yakin Mo Ngapus Bro?',
+                text: "Nggak bakal bisa balik lo",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, saya yakin!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Submit form untuk menghapus data
+                    document.getElementById('deleteForm-' + userId).submit();
+                }
+            });
+        }
+    </script>
     <script>
         $(document).ready(function() {
             $('#start_date').on('change', function() {

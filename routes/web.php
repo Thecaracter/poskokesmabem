@@ -92,5 +92,5 @@ Route::middleware('isLogin')->group(function () {
     Route::get('/advokasi', [LayananAdvokasiController::class, 'index'])->name('advokasi.index');
     // Route::post('/advokasi', [LayananAdvokasiController::class, 'store'])->name('advokasi.store');
     // Route::put('/advokasi/{id}', [LayananAdvokasiController::class, 'update'])->name('advokasi.update');
-    // Route::delete('/advokasi/{id}', [LayananAdvokasiController::class, 'destroy'])->name('advokasi.destroy');
+    Route::delete('/advokasi/{id}', [LayananAdvokasiController::class, 'destroy'])->name('advokasi.destroy');
 });

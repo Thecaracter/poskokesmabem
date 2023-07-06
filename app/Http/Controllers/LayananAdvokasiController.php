@@ -63,6 +63,9 @@ class LayananAdvokasiController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $layananAdvokasi = LayananAdvokasi::findOrFail($id);
+        $layananAdvokasi->delete();
+
+        return redirect()->route('advokasi.index')->with('success', 'Beasiswa deleted successfully.');
     }
 }
