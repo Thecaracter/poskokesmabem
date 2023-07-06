@@ -135,16 +135,18 @@
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h1 class="title1">Posko Kesma</h1>
+                                    <h1 class="title1">Selamat Datang</h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">Posko Kesejahteraan Mahasiswa</h1>
+                                    <h1 class="title2">Pos Komunikasi Kementerian Advokasi dan Kesejahteraan Mahasiswa
+                                    </h1>
                                 </div>
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                                    <a class="ready-btn right-btn page-scroll" href="#advokasipolije">Polije
+                                        curhat</a>
                                     <a class="ready-btn page-scroll" href="#about">Learn More</a>
                                 </div>
                             </div>
@@ -162,16 +164,18 @@
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h1 class="title1">Posko Kesma</h1>
+                                    <h1 class="title1">Selamat Datang</h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">Posko Kesejahteraan Mahasiswa</h1>
+                                    <h1 class="title2">Pos Komunikasi Kementerian Advokasi dan Kesejahteraan Mahasiswa
+                                    </h1>
                                 </div>
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                                    <a class="ready-btn right-btn page-scroll" href="#advokasipolije">Polije
+                                        curhat</a>
                                     <a class="ready-btn page-scroll" href="#about">Learn More</a>
                                 </div>
                             </div>
@@ -189,16 +193,18 @@
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <h1 class="title1">Posko Kesma </h1>
+                                    <h1 class="title1">Selamat Datang </h1>
                                 </div>
                                 <!-- layer 2 -->
                                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <h1 class="title2">Posko Kesejahteraan Mahasiswa</h1>
+                                    <h1 class="title2">Pos Komunikasi Kementerian Advokasi dan Kesejahteraan Mahasiswa
+                                    </h1>
                                 </div>
                                 <!-- layer 3 -->
                                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s"
                                     data-wow-delay=".2s">
-                                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
+                                    <a class="ready-btn right-btn page-scroll" href="#advokasipolije">Polije
+                                        curhat</a>
                                     <a class="ready-btn page-scroll" href="#about">Learn More</a>
                                 </div>
                             </div>
@@ -221,50 +227,28 @@
                 </div>
             </div>
             <div class="row">
-
-                <!-- single-well end-->
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="well-middle">
-                        <div class="section-headline text-center">
-
-                            <h4 class="sec-head">Visi Koperasi Simpan Pinjam</h4>
-                            </a>
-                            <p>
-                                Mengajak seluruh potensi yang ada dalam masyarakat dengan tanpa membedakan
-                                suku,ras,golongan dan agama,
-                                agar mereka dapat bersama-sama, bersatu padu dan beritikad baik dalam membangun ekonomi
-                                kerakyatan
-                                secara bergotong royong dalam bentuk koperasi.
-                            </p>
-                            <ul>
-                                <li>
-                                    <i> </i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- single-well end-->
+                <!-- single-well start-->
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="well-middle">
                         <div class="section-headline text-center">
                             <br>
 
-                            <h4 class="sec-head">Misi Koperasi Simpan Pinjam</h4>
+                            <h4 class="sec-head">Advokasi dan Kesejahteraan Mahasiswa</h4>
 
                             <ul>
-                                <li>Mewujudkan SDM pengelola Koperasi dan UMKM yang Profesional</li>
-                                <li>Mewujudkan iklim usaha yang kondusif bagi perkembangan Koperasi dan UMKM</li>
-                                <li>Menumbuh kembangkan lembaga keuangan mikro (KOPERASI SIMPAN PINJAM/ UNIT SIMPAN
-                                    PINJAM
-                                    KOPERASI-Koperasi) sampai di wilayah perdesaan</li>
-                                <li>Membangun dan mengembangkan jaringan distribusi dan networking ekonomi sampai
-                                    perdesaan</li>
-                                <li>Mengembangkan Koperasi dan UMKM berbasis produk unggulan daerah yang tertumpu pada
-                                    sumber daya lokal
+                                <li>1) Mewujudkan wadah informasi yang informatif dan transparan bagi civitas akademik
+                                    Polije.</li><br>
+                                <li>2) Mewujudkan suatu sarana rujukan pelayanan mahasiswa yang komunikatif dan
+                                    responsif melalui wadah aspirasi yang disediakan.</li>
+                                <br>
+                                <li>3) Menindaklanjuti segala aspirasi mahasiswa melalui pengadvokasian yang optimal dan
+                                    terpadu berlandaskan pada kepentingan dan kebutuhan mahasiswa Polije.</li>
+                                <br>
+                                <li>4) Memberikan pembelaan terhadap hak-hak fundamental mahasiswa Polije dengan baik
+                                    dan benar.</li>
+                                <br>
+                                <li>5) Memberikan ruang sekaligus penyedia layanan dalam sekala kebutuhan mahasiswa
                                 </li>
-                                <li>Penumbuhan wirausaha baru dan perluasan kesempatan kerja</li>
                             </ul>
                         </div>
                     </div>
@@ -415,185 +399,8 @@
     </div>
 
     <!-- our-skill-area end -->
-
-    <!-- Faq area start -->
-    <div class="faq-area area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline text-center">
-                        <h2>FAQ</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-11 col-sm-11 col-xs-15">
-                    <div class="faq-details">
-                        <div class="panel-group" id="accordion">
-                            <!-- Panel Default -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="check-title">
-                                        <a data-toggle="collapse" class="active" data-parent="#accordion"
-                                            href="#check1">
-                                            <span class="acc-icons"></span>Simpanan Yang Menguntungkan
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="check1" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>
-                                            Kami memberikan jasa simpanan 10% per tahun, yang dibayarkan setiap
-                                            bulan.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Panel Default -->
-                            <!-- Panel Default -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="check-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                            <span class="acc-icons"></span> Pinjaman Untuk Anggota
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="check2" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Pinjaman yang mudah dan terpercaya hanya untuk anggota Koperasi.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Panel Default -->
-                            <!-- Panel Default -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="check-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#check3">
-                                            <span class="acc-icons"></span>Berfokus Pada Kepentingan Anggota
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="check3" class="panel-collapse collapse ">
-                                    <div class="panel-body">
-                                        <p>
-                                            KSP Makmur menyediakan layanan dan produk Simpanan dan Pinjaman untuk
-                                            memenuhi kebutuhan anggota.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Panel Default -->
-                            <!-- Panel Default -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="check-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#check4">
-                                            <span class="acc-icons"></span>Aman Dan Terkendali
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="check4" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            KSP Makmur dibawah pengawasan Kementrian Koperasi dan Usaha Kecil dan
-                                            Menengah Republik Indonesia,
-                                            dan sudah mendapatkan pengesahan Badan Hukum sejak 2017.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Panel Default -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end Row -->
-        </div>
-    </div>
-    <!-- End Faq Area -->
-
-    <!-- Start Wellcome Area -->
-    <div class="wellcome-area">
-        <div class="well-bg">
-            <div class="test-overly"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="wellcome-text">
-                            <div class="well-text text-center">
-                                <h2>Bergabunglah Menjadi Anggota KSP Makmur</h2>
-                                <p>
-                                    Dapatkan berbagai macam keuntungan dari beberapa layanan kami
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Wellcome Area -->
-
-    <!-- Start reviews Area -->
-    <div class="reviews-area hidden-xs">
-        <div class="work-us">
-            <div class="work-left-text">
-
-            </div>
-            <div class="work-right-text text-center">
-                <h2>working with us</h2>
-                <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
-                <a href="#contact" class="ready-btn">Contact us</a>
-            </div>
-        </div>
-    </div>
-    <!-- End reviews Area -->
-
-    <!-- Start Pengurus -->
-    <div class="testimonials-area text-center">
-        <div class="testi-inner area-padding">
-            <div class="testi-overly"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <!-- Start testimonials Start -->
-                        <div class="testimonial-content">
-                            {{-- <a class="quate" href="#"><i class="fa fa-quote-right"></i></a> --}}
-                            <!-- start testimonial carousel -->
-                            <div class="testimonial-carousel">
-                                @foreach ($pengurus as $p)
-                                    <div class="single-testi">
-                                        <div class="testi-text">
-                                            <img src="{{ asset('uploads/' . $p->foto) }}" alt="Testimonial Image"
-                                                style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
-                                            <p>{{ $p->nama }}</p>
-                                            <h6>{{ $p->asal }}</h6>
-                                            <h6>{{ $p->jabatan }}</h6>
-                                        </div>
-                                    </div>
-                                    <script>
-                                        console.log({{ $p->foto }})
-                                    </script>
-                                    <!-- End single item -->
-                                @endforeach
-                            </div>
-                        </div>
-                        <!-- End testimonials end -->
-                    </div>
-                    <!-- End Right Feature -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Pengurus -->
-    <br>
-    <br>
     <!-- Start Polije Curhat -->
-    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px ;margin-bottom: 10px;">
+    <div id="advokasipolije" class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px ;margin-bottom: 10px;">
         <div class="section-headline text-center">
             <h2>Polije Curhat</h2>
         </div>
@@ -664,6 +471,185 @@
         </div>
         <!-- End Form -->
         <!-- End Polije Curhat -->
+
+        <br>
+        <br>
+        <!-- Start Wellcome Area -->
+        <div class="wellcome-area">
+            <div class="well-bg">
+                <div class="test-overly"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="wellcome-text">
+                                <div class="well-text text-center">
+                                    <h2>Bergabunglah Menjadi Anggota KSP Makmur</h2>
+                                    <p>
+                                        Dapatkan berbagai macam keuntungan dari beberapa layanan kami
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Wellcome Area -->
+
+        <!-- Start reviews Area -->
+        <div class="reviews-area hidden-xs">
+            <div class="work-us">
+                <div class="work-left-text">
+
+                </div>
+                <div class="work-right-text text-center">
+                    <h2>working with us</h2>
+                    <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
+                    <a href="#contact" class="ready-btn">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <!-- End reviews Area -->
+
+        <!-- Start Pengurus -->
+        <div class="testimonials-area text-center">
+            <div class="testi-inner area-padding">
+                <div class="testi-overly"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <!-- Start testimonials Start -->
+                            <div class="testimonial-content">
+                                {{-- <a class="quate" href="#"><i class="fa fa-quote-right"></i></a> --}}
+                                <!-- start testimonial carousel -->
+                                <div class="testimonial-carousel">
+                                    @foreach ($pengurus as $p)
+                                        <div class="single-testi">
+                                            <div class="testi-text">
+                                                <img src="{{ asset('uploads/' . $p->foto) }}" alt="Testimonial Image"
+                                                    style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                                                <p>{{ $p->nama }}</p>
+                                                <h6>{{ $p->asal }}</h6>
+                                                <h6>{{ $p->jabatan }}</h6>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            console.log({{ $p->foto }})
+                                        </script>
+                                        <!-- End single item -->
+                                    @endforeach
+                                </div>
+                            </div>
+                            <!-- End testimonials end -->
+                        </div>
+                        <!-- End Right Feature -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pengurus -->
+        <br>
+        <br>
+        <!-- Faq area start -->
+        <div class="faq-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                            <h2>FAQ</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-11 col-sm-11 col-xs-15">
+                        <div class="faq-details">
+                            <div class="panel-group" id="accordion">
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" class="active" data-parent="#accordion"
+                                                href="#check1">
+                                                <span class="acc-icons"></span>Simpanan Yang Menguntungkan
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <p>
+                                                Kami memberikan jasa simpanan 10% per tahun, yang dibayarkan setiap
+                                                bulan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#check2">
+                                                <span class="acc-icons"></span> Pinjaman Untuk Anggota
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>
+                                                Pinjaman yang mudah dan terpercaya hanya untuk anggota Koperasi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#check3">
+                                                <span class="acc-icons"></span>Berfokus Pada Kepentingan Anggota
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check3" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            <p>
+                                                KSP Makmur menyediakan layanan dan produk Simpanan dan Pinjaman untuk
+                                                memenuhi kebutuhan anggota.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                                <!-- Panel Default -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#check4">
+                                                <span class="acc-icons"></span>Aman Dan Terkendali
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="check4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>
+                                                KSP Makmur dibawah pengawasan Kementrian Koperasi dan Usaha Kecil dan
+                                                Menengah Republik Indonesia,
+                                                dan sudah mendapatkan pengesahan Badan Hukum sejak 2017.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Panel Default -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Row -->
+            </div>
+        </div>
+        <!-- End Faq Area -->
+
 
         <!-- Start contact Area -->
         <div id="contact" class="contact-area">
