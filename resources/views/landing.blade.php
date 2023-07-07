@@ -130,8 +130,10 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="slider-content">
                                 <!-- layer 1 -->
+
                                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s"
                                     data-wow-delay=".2s">
+
                                     <h1 class="title1">Selamat Datang</h1>
                                 </div>
                                 <!-- layer 2 -->
@@ -426,7 +428,7 @@
                 <div style="width: 48%;">
                     <label for="department" style="display: block;">Jurusan:</label>
                     <select id="department" name="jurusan_id" class="form-control select2" required>
-                        <option value="">Pilih Jurusan</option>
+                        <option value=""></option>
                         @foreach ($jurusan as $j)
                             <option value="{{ $j->id }}">{{ $j->nama_jurusan }}</option>
                         @endforeach
@@ -435,7 +437,7 @@
                 <div style="width: 48%;">
                     <label for="study-program" style="display: block;">Program Studi:</label>
                     <select id="study-program" name="prodi_id" class="form-control select2" required>
-                        <option value="">Pilih Program Studi</option>
+                        <option value=""></option>
                         @foreach ($prodi as $p)
                             <option value="{{ $p->id }}">{{ $p->nama_prodi }}</option>
                         @endforeach
@@ -445,7 +447,7 @@
             <div style="margin-bottom: 20px;">
                 <label for="batch" style="display: block;">Angkatan:</label>
                 <select id="batch" name="angkatan_id" class="form-control select2" required>
-                    <option value="">Pilih Angkatan</option>
+                    <option value=""></option>
                     @foreach ($angkatan as $a)
                         <option value="{{ $a->id }}">{{ $a->tahun_angkatan }}</option>
                     @endforeach
@@ -454,7 +456,7 @@
             <div style="margin-bottom: 20px;">
                 <label for="service" style="display: block;">Layanan:</label>
                 <select id="service" name="layanan_id" class="form-control select2" required>
-                    <option value="">Pilih Layanan</option>
+                    <option value=""></option>
                     @foreach ($layanan as $l)
                         <option value="{{ $l->id }}">{{ $l->nama_layanan }}</option>
                     @endforeach
