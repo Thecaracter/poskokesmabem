@@ -35,6 +35,7 @@ class InfoKosController extends Controller
             'link_tanggapan' => 'required',
             'nama_cp' => 'required',
             'link_contact' => 'required',
+            'link_kebijakankampus' => 'required',
         ]);
 
         InfoKos::create($request->all());
@@ -69,6 +70,7 @@ class InfoKosController extends Controller
             'link_tanggapan' => 'required',
             'nama_cp' => 'required',
             'link_contact' => 'required',
+            'link_kebijakankampus' => 'required',
         ]);
 
         $infokos = InfoKos::findOrFail($id);

@@ -17,5 +17,6 @@ class InfoKos extends Model
         'link_tanggapan',
         'nama_cp',
         'link_contact',
+        'link_kebijakankampus'
     ];
 }

@@ -12,9 +12,10 @@ return new class extends Migration {
     {
         Schema::create('infokos', function (Blueprint $table) {
             $table->id();
-            $table->string('link_kos_jbr');
-            $table->string('link_kos_bws');
-            $table->string('link_tanggapan');
+            $table->text('link_kos_jbr');
+            $table->text('link_kos_bws');
+            $table->text('link_tanggapan');
+            $table->text('link_kebijakankampus');
             $table->string('nama_cp');
             $table->text('link_contact');
 

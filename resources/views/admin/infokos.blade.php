@@ -36,6 +36,7 @@
                                             <th class="text-center">Link Kos JBR</th>
                                             <th class="text-center">Link Kos BWS</th>
                                             <th class="text-center">Link Tanggapan</th>
+                                            <th class="text-center">Link Kebijakan Kampus</th>
                                             <th class="text-center">Nama CP</th>
                                             <th class="text-center">Link Contact</th>
                                             <th class="text-center">Action</th>
@@ -48,6 +49,7 @@
                                                 <td class="text-center">{{ $item->link_kos_jbr }}</td>
                                                 <td class="text-center">{{ $item->link_kos_bws }}</td>
                                                 <td class="text-center">{{ $item->link_tanggapan }}</td>
+                                                <td class="text-center">{{ $item->link_kebijakankampus }}</td>
                                                 <td class="text-center">{{ $item->nama_cp }}</td>
                                                 <td class="text-center">{{ $item->link_contact }}</td>
                                                 <td class="align-middle text-center">
@@ -108,9 +110,14 @@
                                 placeholder="Link Tanggapan" required>
                         </div>
                         <div class="form-group">
+                            <label for="link_tanggapan">Link Tanggapan</label>
+                            <input type="text" class="form-control" id="link_kebijakankampus" name="link_kebijakankampus"
+                                placeholder="Link Kebijakan Kampus" required>
+                        </div>
+                        <div class="form-group">
                             <label for="nama_cp">Nama CP</label>
-                            <input type="text" class="form-control" id="nama_cp" name="nama_cp" placeholder="Nama CP"
-                                required>
+                            <input type="text" class="form-control" id="nama_cp" name="nama_cp"
+                                placeholder="Nama CP" required>
                         </div>
                         <div class="form-group">
                             <label for="link_contact">Link Contact</label>
@@ -162,6 +169,12 @@
                                 <input type="text" class="form-control" id="link_tanggapan{{ $item->id }}"
                                     name="link_tanggapan" placeholder="Link Tanggapan"
                                     value="{{ $item->link_tanggapan }}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="link_tanggapan{{ $item->id }}">Link Kebijakan Kampus</label>
+                                <input type="text" class="form-control" id="link_tanggapan{{ $item->id }}"
+                                    name="link_kebijakankampus" placeholder="Link Kebijakan Kampus"
+                                    value="{{ $item->link_kebijakankampus }}" required>
                             </div>
                             <div class="form-group">
                                 <label for="edit_nama_cp{{ $item->id }}">Nama CP</label>
