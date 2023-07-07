@@ -382,10 +382,10 @@
                             <div class="diff-ournumbers" id="diffnumbers-1">
 
                                 <p class="counter-count" style="font-size:70px;color:white;">
-                                    {{ $pengurusCount }}
+                                    {{ $mitraCount }}
                                 </p>
                                 <br>
-                                <h2>Pengurus</h2>
+                                <h2>Mitra Kesma</h2>
                             </div>
                         </div>
                     </div>

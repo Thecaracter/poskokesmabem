@@ -24,14 +24,14 @@ class LandingController extends Controller
         $mitra = Mitra::all();
         $beasiswaCount = Beasiswa::count();
         $layananCount = LayananAdvokasi::count();
-        $pengurusCount = StrukturPengurus::count();
+        $mitraCount = Mitra::count();
         $pengurus = StrukturPengurus::all();
         $infokos = InfoKos::all();
         $jurusan = Jurusan::all();
         $prodi = Prodi::all();
         $angkatan = Angkatan::all();
         $layanan = Layanan::all();
-        return view('landing', compact('beasiswas', 'mitra', 'beasiswaCount', 'layananCount', 'pengurusCount', 'pengurus', 'infokos', 'jurusan', 'prodi', 'angkatan', 'layanan'));
+        return view('landing', compact('beasiswas', 'mitra', 'beasiswaCount', 'layananCount', 'mitraCount', 'pengurus', 'infokos', 'jurusan', 'prodi', 'angkatan', 'layanan'));
     }
 
     /**
