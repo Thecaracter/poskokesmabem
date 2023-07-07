@@ -31,6 +31,7 @@ class Advokasi_data extends Seeder
                 'jurusan_id' => 2,
                 'prodi_id' => 2,
                 'layanan_id' => 2,
+
             ],
             // Tambahkan data lainnya sesuai kebutuhan
         ];
