@@ -9,8 +9,8 @@
     <meta content="" name="description">
 
     <!-- Favicons -->
-    <link href="landingassets/img/logo_koperasi.png" rel="icon">
-    <link href="landingssets/img/logo_koperasi.png" rel="apple-touch-icon">
+    <link href="foto/abisatya.png" rel="icon">
+    <link href="foto/abisatya.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -100,9 +100,6 @@
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#contact">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a class="page-scroll" href="/masuk">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -474,27 +471,7 @@
 
         <br>
         <br>
-        <!-- Start Wellcome Area -->
-        <div class="wellcome-area">
-            <div class="well-bg">
-                <div class="test-overly"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="wellcome-text">
-                                <div class="well-text text-center">
-                                    <h2>Bergabunglah Menjadi Anggota KSP Makmur</h2>
-                                    <p>
-                                        Dapatkan berbagai macam keuntungan dari beberapa layanan kami
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Wellcome Area -->
+
 
         <!-- Start reviews Area -->
         <div class="reviews-area hidden-xs">
@@ -668,12 +645,9 @@
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="contact-icon text-center">
                                 <div class="single-icon">
-                                    <i class="fa fa-phone"></i></a>
+                                    <i class="fa fa-instagram"></i></a>
                                     <p>
-                                        Call: (0333) 846328<br>
-                                        <span>Senin - Kamis (08.00 - 14.00)
-                                            <br>Jumat (08.00 - 10.30)
-                                            <br>Sabtu (08.00 - 13.00)</span>
+                                        follow kami di : @bempolije
                                     </p>
                                 </div>
                             </div>
@@ -682,10 +656,11 @@
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="contact-icon text-center">
                                 <div class="single-icon">
-                                    <a href="https://gmail.com"><i class="fa fa-envelope-o"></i></a>
+                                    <a
+                                        href="https://www.youtube.com/channel/UC5cq6FVaRZKmw6F5dVuY6pA?app=desktop&sub_confirmation=1"><i
+                                            class="fa fa-youtube"></i></a>
                                     <p>
-                                        Email: kspmakmur@gmail.com<br>
-                                        <span>Web: www.kspmakmur.com</span>
+                                        Subcribe kamid di youtube : BEM Polije
                                     </p>
                                 </div>
                             </div>
@@ -696,8 +671,9 @@
                                 <div class="single-icon">
                                     <i class="fa fa-map-marker"></i>
                                     <p>
-                                        Jl. Guntur, Dusun Krajan, Genteng Kulon, Kec. Genteng<br>
-                                        <span>Banyuwangi</span>
+                                        Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa
+                                        Timur 68121<br>
+                                        {{-- <span>Banyuwangi</span> --}}
                                     </p>
                                 </div>
                             </div>
@@ -728,10 +704,13 @@
                                     <div class="footer-icons">
                                         <ul>
                                             <li>
-                                                <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                                                <a
+                                                    href="https://www.youtube.com/channel/UC5cq6FVaRZKmw6F5dVuY6pA?app=desktop&sub_confirmation=1"><i
+                                                        class="fa fa-youtube"></i></a>
                                             </li>
                                             <li>
-                                                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                                                <a href="https://www.instagram.com/bempolije"><i
+                                                        class="fa fa-instagram"></i></a>
                                             </li>
                                         </ul>
                                     </div>

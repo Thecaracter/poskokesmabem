@@ -1,8 +1,8 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="/dashboard"> <img alt="image" src="{{ asset('admin/assets/img/logo.png') }}" class="header-logo" />
-                <span class="logo-name">Quisioner</span>
+            <a href="/dashboard"> <img alt="image" src="{{ asset('foto/bempolije.jpg') }}" class="header-logo" />
+                <span class="logo-name">Posko Kesma</span>
             </a>
         </div>
         <ul class="sidebar-menu">
@@ -13,7 +13,7 @@
             <li
                 class="dropdown {{ Request::path() === 'pengurus' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'mitra' || Request::path() === 'prodi' || Request::path() === 'beasiswa' || Request::path() === 'layanan' || Request::path() === 'infokos' ? 'active' : '' }}">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                        data-feather="briefcase"></i><span>Master</span></a>
+                        data-feather="briefcase"></i><span>Layanan</span></a>
                 <ul class="dropdown-menu">
                     <li class="dropdown {{ Request::path() === 'pengurus' ? 'active' : '' }}"><a class="nav-link"
                             href="/pengurus"><i data-feather="user"></i><span>Pengurus</span></a>
@@ -42,7 +42,7 @@
                 </ul>
             </li>
             <li class="dropdown {{ Request::path() === 'advokasi' ? 'active' : '' }}">
-                <a href="/advokasi" class="nav-link"><i data-feather="file-text"></i><span>Advokasi</span></a>
+                <a href="/advokasi" class="nav-link"><i data-feather="file-text"></i><span>Aspirasi</span></a>
             </li>
         </ul>
     </aside>
