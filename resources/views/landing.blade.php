@@ -319,18 +319,21 @@
                     <div class="card-body">
                         @foreach ($infokos as $info)
                             <p class="card-text">
-                                <strong>Link Kos JBR:</strong><br><br>
-                                <a class="btn btn-primary" href="{{ $info->link_kos_jbr }}" target="_blank"
-                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a><br>
-                                <strong>Link Kos BWS:</strong><br><br>
-                                <a class="btn btn-primary" href="{{ $info->link_kos_bws }}" target="_blank"
-                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a><br>
-                                <strong>Link Tanggapan:</strong><br><br>
-                                <a class="btn btn-primary" href="{{ $info->link_tanggapan }}" target="_blank"
-                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a><br>
-                                <strong>Link Contact: {{ $info->nama_cp }}</strong><br><br>
-                                <a class="btn btn-primary" href="{{ $info->link_contact }}" target="_blank"
-                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Visit</a>
+                                <strong>Link Kos JBR:</strong>
+                                <a class="" href="{{ $info->link_kos_jbr }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
+                                <strong>Link Kos BWS:</strong>
+                                <a class="" href="{{ $info->link_kos_bws }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
+                                <strong>Link Tanggapan:</strong>
+                                <a class="" href="{{ $info->link_tanggapan }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
+                                <strong>Link Kebijakan Kampus:</strong>
+                                <a class="" href="{{ $info->link_kebijakankampus }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
+                                <strong>Link Contact: {{ $info->nama_cp }}</strong>
+                                <a class="" href="{{ $info->link_contact }}" target="_blank"
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
                             </p>
                         @endforeach
                     </div>
