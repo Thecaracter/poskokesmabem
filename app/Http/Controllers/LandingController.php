@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Angkatan;
 use App\Models\Beasiswa;
+use App\Models\Faq;
 use App\Models\InfoKos;
 use App\Models\Jurusan;
 use App\Models\Layanan;
@@ -31,7 +32,8 @@ class LandingController extends Controller
         $prodi = Prodi::all();
         $angkatan = Angkatan::all();
         $layanan = Layanan::all();
-        return view('landing', compact('beasiswas', 'mitra', 'beasiswaCount', 'layananCount', 'mitraCount', 'pengurus', 'infokos', 'jurusan', 'prodi', 'angkatan', 'layanan'));
+        $faqs = Faq::all();
+        return view('landing', compact('beasiswas', 'mitra', 'beasiswaCount', 'layananCount', 'mitraCount', 'pengurus', 'infokos', 'jurusan', 'prodi', 'angkatan', 'layanan', 'faqs'));
     }
 
     /**

@@ -546,83 +546,24 @@
                     <div class="col-md-11 col-sm-11 col-xs-15">
                         <div class="faq-details">
                             <div class="panel-group" id="accordion">
-                                <!-- Panel Default -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="check-title">
-                                            <a data-toggle="collapse" class="active" data-parent="#accordion"
-                                                href="#check1">
-                                                <span class="acc-icons"></span>Simpanan Yang Menguntungkan
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="check1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <p>
-                                                Kami memberikan jasa simpanan 10% per tahun, yang dibayarkan setiap
-                                                bulan.
-                                            </p>
+                                @foreach ($faqs as $index => $faq)
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="check-title">
+                                                <a data-toggle="collapse" class="{{ $index === 0 ? 'active' : '' }}"
+                                                    data-parent="#accordion" href="#faq-{{ $index }}">
+                                                    <span class="acc-icons"></span>{{ $faq->pertanyaan }}
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="faq-{{ $index }}"
+                                            class="panel-collapse collapse {{ $index === 0 ? 'in' : '' }}">
+                                            <div class="panel-body">
+                                                <p>{{ $faq->jawaban }}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- End Panel Default -->
-                                <!-- Panel Default -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="check-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                                <span class="acc-icons"></span> Pinjaman Untuk Anggota
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="check2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>
-                                                Pinjaman yang mudah dan terpercaya hanya untuk anggota Koperasi.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Panel Default -->
-                                <!-- Panel Default -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="check-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#check3">
-                                                <span class="acc-icons"></span>Berfokus Pada Kepentingan Anggota
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="check3" class="panel-collapse collapse ">
-                                        <div class="panel-body">
-                                            <p>
-                                                KSP Makmur menyediakan layanan dan produk Simpanan dan Pinjaman untuk
-                                                memenuhi kebutuhan anggota.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Panel Default -->
-                                <!-- Panel Default -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="check-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#check4">
-                                                <span class="acc-icons"></span>Aman Dan Terkendali
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="check4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>
-                                                KSP Makmur dibawah pengawasan Kementrian Koperasi dan Usaha Kecil dan
-                                                Menengah Republik Indonesia,
-                                                dan sudah mendapatkan pengesahan Badan Hukum sejak 2017.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Panel Default -->
+                                @endforeach
                             </div>
                         </div>
                     </div>
