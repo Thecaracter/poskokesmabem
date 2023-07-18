@@ -4,6 +4,7 @@ use App\Http\Controllers\AngkatanController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\InfoKosController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
@@ -87,6 +88,12 @@ Route::middleware('isLogin')->group(function () {
     Route::post('/mitra', [MitraController::class, 'store'])->name('mitra.store');
     Route::put('/mitra/{id}', [MitraController::class, 'update'])->name('mitra.update');
     Route::delete('/mitra/{id}', [MitraController::class, 'destroy'])->name('mitra.destroy');
+
+    // FAQ route
+    Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
+    Route::post('/faq', [FaqController::class, 'store'])->name('faq.store');
+    Route::put('/faq/{id}', [FaqController::class, 'update'])->name('faq.update');
+    Route::delete('/faq/{id}', [FaqController::class, 'destroy'])->name('faq.destroy');
 
     // Layanan Advokasi route
     Route::get('/advokasi', [LayananAdvokasiController::class, 'index'])->name('advokasi.index');
