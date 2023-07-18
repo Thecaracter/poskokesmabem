@@ -11,7 +11,7 @@
                 <a href="/dashboard" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>
             <li
-                class="dropdown {{ Request::path() === 'pengurus' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'mitra' || Request::path() === 'prodi' || Request::path() === 'beasiswa' || Request::path() === 'layanan' || Request::path() === 'infokos' ? 'active' : '' }}">
+                class="dropdown {{ Request::path() === 'pengurus' || Request::path() === 'angkatan' || Request::path() === 'jurusan' || Request::path() === 'mitra' || Request::path() === 'prodi' || Request::path() === 'beasiswa' || Request::path() === 'layanan' || Request::path() === 'faq' || Request::path() === 'infokos' ? 'active' : '' }}">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i
                         data-feather="briefcase"></i><span>Layanan</span></a>
                 <ul class="dropdown-menu">
@@ -38,6 +38,9 @@
                     </li>
                     <li class="dropdown {{ Request::path() === 'mitra' ? 'active' : '' }}"><a class="nav-link"
                             href="/mitra"><i data-feather="dollar-sign"></i><span>Mitra</span></a>
+                    </li>
+                    <li class="dropdown {{ Request::path() === 'faq' ? 'active' : '' }}"><a class="nav-link"
+                            href="/faq"><i data-feather="file-plus"></i><span>FAQ</span></a>
                     </li>
                 </ul>
             </li>
