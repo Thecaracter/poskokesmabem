@@ -1509,7 +1509,7 @@ h2::selection {
   /* Reset nilai bottom */
   left: 0;
   right: 0;
-  margin-top: 20px;
+  margin-top: 500px;
   /* Sesuaikan margin-top sesuai kebutuhan untuk menurunkan carousel */
 }
 
@@ -1541,11 +1541,12 @@ h2::selection {
 
 /* Mengatur posisi carousel testimonial di tengah */
 .testimonial-content {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 .testi-text.text-center>h6 {
   color: #fff;
