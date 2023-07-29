@@ -502,7 +502,7 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <!-- Start testimonials Start -->
                             <div class="testimonial-content">
-                                {{-- <a class="quate" href="#"><i class="fa fa-quote-right"></i></a> --}}
+
                                 <!-- start testimonial carousel -->
                                 <div class="testimonial-carousel">
                                     @foreach ($pengurus as $p)
