@@ -644,7 +644,7 @@
                                     </div>
 
                                     <p> </p>
-                                    <div class="footer-icons">
+                                    {{-- <div class="footer-icons">
                                         <ul>
                                             <li>
                                                 <a
@@ -656,7 +656,7 @@
                                                         class="fa fa-instagram"></i></a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -669,9 +669,13 @@
                                         Hubungi kami untuk layanan lebih lanjut
                                     </p>
                                     <div class="footer-contacts">
-                                        <p><span>Tel:</span> (0333) 846328</p>
-                                        <p><span>Email:</span> kspmakmur@gmail.com</p>
-                                        <p><span>Hari Kerja:</span> (Senin - Sabtu)</p>
+                                        <p><span>instagram</span> <a
+                                                href="https://www.instagram.com/advokesmapolije/">@advokesmapolije</a>
+                                        </p>
+                                        <p><span>Email:</span> <a
+                                                href="mailto:bempolije@gmail.com">bempolije@gmail.com</a></p>
+                                        <p><span>Website BEM:</span> <a
+                                                href="https://www.example-bem-website.com">bempolije.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -686,7 +690,7 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="copyright text-center">
                                 <p>
-                                    &copy; Copyright <strong>KSP Makmur</strong>
+                                    &copy; Copyright <strong>PoskoKesma Polije</strong>
                                 </p>
                             </div>
 
