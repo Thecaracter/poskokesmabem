@@ -513,6 +513,7 @@
                                                 <p>{{ $p->nama }}</p>
                                                 <h6>{{ $p->asal }}</h6>
                                                 <h6>{{ $p->jabatan }}</h6>
+                                                <br><br>
                                             </div>
                                         </div>
                                         <script>
