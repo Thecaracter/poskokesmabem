@@ -345,7 +345,7 @@
     </div>
     <br>
     <!-- end Info Kos area -->
-    <!-- our-skill-area start -->
+    {{-- <!-- our-skill-area start -->
     <div class="our-skill-area fix hidden-sm">
         <div class="test-overly"></div>
         <div class="skill-bg area-padding-2">
@@ -400,7 +400,7 @@
         </div>
     </div>
 
-    <!-- our-skill-area end -->
+    <!-- our-skill-area end --> --}}
     <!-- Start Polije Curhat -->
     <div id="advokasipolije" class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px ;margin-bottom: 10px;">
         <div class="section-headline text-center">
@@ -574,7 +574,7 @@
         <!-- End Faq Area -->
 
 
-        <!-- Start contact Area -->
+        {{-- <!-- Start contact Area -->
         <div id="contact" class="contact-area">
             <div class="contact-inner area-padding">
                 <div class="contact-overly"></div>
@@ -619,20 +619,18 @@
                                     <p>
                                         Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa
                                         Timur 68121<br>
-                                        {{-- <span>Banyuwangi</span> --}}
+                                       
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-
-                        <!-- End Left contact -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Contact Area -->
+        <!-- End Contact Area --> --}}
 
         <!-- Start Footer bottom Area -->
         <footer>
@@ -643,7 +641,7 @@
                             <div class="footer-content">
                                 <div class="footer-head">
                                     <div class="footer-logo">
-                                        <h2>Koperasi Simpan Pinjam</h2>
+                                        <h2>Posko Kesma Bem KM</h2>
                                     </div>
 
                                     <p> </p>
