@@ -343,62 +343,6 @@
     </div>
     <br>
     <!-- end Info Kos area -->
-    {{-- <!-- our-skill-area start -->
-    <div class="our-skill-area fix hidden-sm">
-        <div class="test-overly"></div>
-        <div class="skill-bg area-padding-2">
-            <div class="container">
-                <!-- section-heading end -->
-                <div class="row">
-                    <div class="skill-text">
-                        <!-- single-skill start -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
-                            <div class="single-skill">
-                                <div class="diff-ournumbers" id="diffnumbers-1">
-                                    <p class="counter-count" style="font-size:70px;color:white;">
-                                        {{ $layananCount }}
-                                    </p>
-                                    <br>
-                                    <h2>Advokasi Diterima</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-skill end -->
-                    <!-- single-skill start -->
-                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
-                        <div class="single-skill">
-                            <div class="diff-ournumbers" id="diffnumbers-1">
-
-                                <p class="counter-count" style="font-size:70px;color:white;">
-                                    {{ $beasiswaCount }}
-                                </p>
-                                <br>
-                                <h2>Beasiswa</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-skill end -->
-                    <!-- single-skill start -->
-                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
-                        <div class="single-skill">
-                            <div class="diff-ournumbers" id="diffnumbers-1">
-
-                                <p class="counter-count" style="font-size:70px;color:white;">
-                                    {{ $mitraCount }}
-                                </p>
-                                <br>
-                                <h2>Mitra Kesma</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single-skill end -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- our-skill-area end --> --}}
     <!-- Start Polije Curhat -->
     <div id="advokasipolije" class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px ;margin-bottom: 10px;">
         <div class="section-headline text-center">
@@ -492,6 +436,7 @@
         <!-- End reviews Area -->
 
         <!-- Start Pengurus -->
+        <!-- Start Pengurus -->
         <div class="testimonials-area text-center">
             <div class="testi-inner area-padding">
                 <div class="testi-overly"></div>
@@ -502,9 +447,10 @@
                             <div class="testimonial-content">
 
                                 <!-- start testimonial carousel -->
-                                <div class="testimonial-carousel">
+                                <div class="testimonial-carousel"
+                                    style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
                                     @foreach ($pengurus as $p)
-                                        <div class="single-testi">
+                                        <div class="single-testi" style="flex: 0 0 auto; margin-right: 20px;">
                                             <div class="testi-text">
                                                 <img src="{{ asset('uploads/' . $p->foto) }}" alt="Testimonial Image"
                                                     style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
@@ -514,10 +460,6 @@
                                                 <br><br>
                                             </div>
                                         </div>
-                                        <script>
-                                            console.log({{ $p->foto }})
-                                        </script>
-                                        <!-- End single item -->
                                     @endforeach
                                 </div>
                             </div>
@@ -528,6 +470,8 @@
                 </div>
             </div>
         </div>
+        <!-- End Pengurus -->
+
         <!-- End Pengurus -->
         <br>
         <br>
@@ -572,65 +516,6 @@
         </div>
         <!-- End Faq Area -->
 
-
-        {{-- <!-- Start contact Area -->
-        <div id="contact" class="contact-area">
-            <div class="contact-inner area-padding">
-                <div class="contact-overly"></div>
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="section-headline text-center">
-                                <h2>Contact us</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Start contact icon column -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="contact-icon text-center">
-                                <div class="single-icon">
-                                    <i class="fa fa-instagram"></i></a>
-                                    <p>
-                                        follow kami di : @bempolije
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Start contact icon column -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="contact-icon text-center">
-                                <div class="single-icon">
-                                    <a
-                                        href="https://www.youtube.com/channel/UC5cq6FVaRZKmw6F5dVuY6pA?app=desktop&sub_confirmation=1"><i
-                                            class="fa fa-youtube"></i></a>
-                                    <p>
-                                        Subcribe kamid di youtube : BEM Polije
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Start contact icon column -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="contact-icon text-center">
-                                <div class="single-icon">
-                                    <i class="fa fa-map-marker"></i>
-                                    <p>
-                                        Jl. Mastrip, Krajan Timur, Sumbersari, Kec. Sumbersari, Kabupaten Jember, Jawa
-                                        Timur 68121<br>
-                                       
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Contact Area --> --}}
-
         <!-- Start Footer bottom Area -->
         <footer>
             <div class="footer-area">
@@ -644,19 +529,6 @@
                                     </div>
 
                                     <p> </p>
-                                    {{-- <div class="footer-icons">
-                                        <ul>
-                                            <li>
-                                                <a
-                                                    href="https://www.youtube.com/channel/UC5cq6FVaRZKmw6F5dVuY6pA?app=desktop&sub_confirmation=1"><i
-                                                        class="fa fa-youtube"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/bempolije"><i
-                                                        class="fa fa-instagram"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div> --}}
                                 </div>
                             </div>
                         </div>
