@@ -116,7 +116,7 @@
     <div id="home" class="slider-area">
         <div class="bend niceties preview-2">
             <div id="ensign-nivoslider" class="slides">
-                <img src="landingassets/img/slider/pic1.jpg" alt="" title="#slider-direction-1" />
+                <img src="landingassets/img/slider/bg1.png" alt="" title="#slider-direction-1" />
                 <img src="landingassets/img/slider/pic2.jpg" alt="" title="#slider-direction-2" />
                 <img src="landingassets/img/slider/pic3.jpg" alt="" title="#slider-direction-3" />
             </div>
