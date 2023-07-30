@@ -27,9 +27,9 @@
                     <li class="dropdown {{ Request::path() === 'prodi' ? 'active' : '' }}"><a class="nav-link"
                             href="/prodi"><i data-feather="database"></i><span>Prodi</span></a>
                     </li>
-                    <li class="dropdown {{ Request::path() === 'layanan' ? 'active' : '' }}"><a class="nav-link"
+                    {{-- <li class="dropdown {{ Request::path() === 'layanan' ? 'active' : '' }}"><a class="nav-link"
                             href="/layanan"><i data-feather="smartphone"></i><span>Layanan</span></a>
-                    </li>
+                    </li> --}}
                     <li class="dropdown {{ Request::path() === 'beasiswa' ? 'active' : '' }}"><a class="nav-link"
                             href="/beasiswa"><i data-feather="gift"></i><span>Beasiswa</span></a>
                     </li>

@@ -84,10 +84,10 @@
                                 id="navbar-example">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" href="#home">Beranda</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#about">About</a>
+                                        <a class="page-scroll" href="#about">Tentang Kami</a>
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#beasiswa">Beasiswa</a>
@@ -219,7 +219,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
-                        <h2>About Us</h2>
+                        <h2>Tentang Kami</h2>
                     </div>
                 </div>
             </div>
@@ -319,19 +319,19 @@
                     <div class="card-body">
                         @foreach ($infokos as $info)
                             <p class="card-text">
-                                <strong>Link Kos JBR:</strong>
+                                <strong>Info Kos JBR:</strong>
                                 <a class="" href="{{ $info->link_kos_jbr }}" target="_blank"
                                     rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
-                                <strong>Link Kos BWS:</strong>
+                                {{-- <strong>Link Kos BWS:</strong>
                                 <a class="" href="{{ $info->link_kos_bws }}" target="_blank"
-                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
-                                <strong>Link Tanggapan:</strong>
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br> --}}
+                                {{-- <strong>Link Tanggapan:</strong>
                                 <a class="" href="{{ $info->link_tanggapan }}" target="_blank"
-                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
-                                <strong>Link Kebijakan Kampus:</strong>
+                                    rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br> --}}
+                                <strong>Info SE/SK 2023:</strong>
                                 <a class="" href="{{ $info->link_kebijakankampus }}" target="_blank"
                                     rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
-                                <strong>Link Contact: {{ $info->nama_cp }}</strong>
+                                <strong>Info Contact: {{ $info->nama_cp }}</strong>
                                 <a class="" href="{{ $info->link_contact }}" target="_blank"
                                     rel="noopener noreferrer" style="margin-bottom: 5px;">Klik Disini</a><br><br>
                             </p>
@@ -342,6 +342,7 @@
         </div>
     </div>
     <br>
+    <br><br>
     <!-- end Info Kos area -->
     <!-- Start Polije Curhat -->
     <div id="advokasipolije" class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px ;margin-bottom: 10px;">
@@ -352,7 +353,7 @@
     <!-- End Polije Curhat -->
 
     <!-- Form -->
-    <<div
+    <div
         style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f2f2f2;">
         <form action="{{ route('layanan-advokasi.store') }}" method="POST">
             @csrf
@@ -395,7 +396,7 @@
                     @endforeach
                 </select>
             </div>
-            <div style="margin-bottom: 20px;">
+            {{-- <div style="margin-bottom: 20px;">
                 <label for="service" style="display: block;">Layanan:</label>
                 <select id="service" name="layanan_id" class="form-control select2" required>
                     <option value=""></option>
@@ -403,253 +404,253 @@
                         <option value="{{ $l->id }}">{{ $l->nama_layanan }}</option>
                     @endforeach
                 </select>
-            </div>
+            </div> --}}
             <div style="margin-bottom: 20px;">
-                <label for="feedback" style="display: block;">Kritik dan Saran:</label>
+                <label for="feedback" style="display: block;">Curhatan:</label>
                 <textarea id="feedback" name="kritik_saran" rows="4" required
                     style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
             </div>
             <button type="submit"
                 style="width: 100%; padding: 10px; background-color: #4CAF50; border: none; color: white; font-weight: bold;">Submit</button>
         </form>
-        </div>
-        <!-- End Form -->
-        <!-- End Polije Curhat -->
+    </div>
+    <!-- End Form -->
+    <!-- End Polije Curhat -->
 
-        <br>
-        <br>
+    <br>
+    <br>
 
-        <!-- Start Pengurus -->
-        <!-- Start Pengurus -->
-        <div class="testimonials-area text-center">
-            <div class="testi-inner area-padding">
-                <div class="testi-overly"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <!-- Start testimonials Start -->
-                            <div class="testimonial-content">
-
-                                <!-- start testimonial carousel -->
-                                <div class="testimonial-carousel"
-                                    style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
-                                    @foreach ($pengurus as $p)
-                                        <div class="single-testi" style="flex: 0 0 auto; margin-right: 20px;">
-                                            <div class="testi-text">
-                                                <img src="{{ asset('uploads/' . $p->foto) }}" alt="Testimonial Image"
-                                                    style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
-                                                <p>{{ $p->nama }}</p>
-                                                <h6>{{ $p->asal }}</h6>
-                                                <h6>{{ $p->jabatan }}</h6>
-                                                <br><br>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
-                            <!-- End testimonials end -->
-                        </div>
-                        <!-- End Right Feature -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Pengurus -->
-
-        <!-- End Pengurus -->
-        <br>
-        <br>
-        <!-- Faq area start -->
-        <div class="faq-area area-padding">
+    <!-- Start Pengurus -->
+    <!-- Start Pengurus -->
+    <div class="testimonials-area text-center">
+        <div class="testi-inner area-padding">
+            <div class="testi-overly"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-headline text-center">
-                            <h2>FAQ</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-11 col-sm-11 col-xs-15">
-                        <div class="faq-details">
-                            <div class="panel-group" id="accordion">
-                                @foreach ($faqs as $index => $faq)
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="check-title">
-                                                <a data-toggle="collapse" class="{{ $index === 0 ? 'active' : '' }}"
-                                                    data-parent="#accordion" href="#faq-{{ $index }}">
-                                                    <span class="acc-icons"></span>{{ $faq->pertanyaan }}
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="faq-{{ $index }}"
-                                            class="panel-collapse collapse {{ $index === 0 ? 'in' : '' }}">
-                                            <div class="panel-body">
-                                                <p>{{ $faq->jawaban }}</p>
-                                            </div>
+                        <!-- Start testimonials Start -->
+                        <div class="testimonial-content">
+
+                            <!-- start testimonial carousel -->
+                            <div class="testimonial-carousel"
+                                style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
+                                @foreach ($pengurus as $p)
+                                    <div class="single-testi" style="flex: 0 0 auto; margin-right: 20px;">
+                                        <div class="testi-text">
+                                            <img src="{{ asset('uploads/' . $p->foto) }}" alt="Testimonial Image"
+                                                style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+                                            <p>{{ $p->nama }}</p>
+                                            <h6>{{ $p->asal }}</h6>
+                                            <h6>{{ $p->jabatan }}</h6>
+                                            <br><br>
                                         </div>
                                     </div>
                                 @endforeach
                             </div>
                         </div>
+                        <!-- End testimonials end -->
                     </div>
+                    <!-- End Right Feature -->
                 </div>
-                <!-- end Row -->
             </div>
         </div>
-        <!-- End Faq Area -->
+    </div>
+    <!-- End Pengurus -->
 
-        <!-- Start Footer bottom Area -->
-        <footer>
-            <div class="footer-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-content">
-                                <div class="footer-head">
-                                    {{-- <div class="footer-logo">
+    <!-- End Pengurus -->
+    <br>
+    <br>
+    <!-- Faq area start -->
+    <div class="faq-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11 col-sm-11 col-xs-15">
+                    <div class="faq-details">
+                        <div class="panel-group" id="accordion">
+                            @foreach ($faqs as $index => $faq)
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="check-title">
+                                            <a data-toggle="collapse" class="{{ $index === 0 ? 'active' : '' }}"
+                                                data-parent="#accordion" href="#faq-{{ $index }}">
+                                                <span class="acc-icons"></span>{{ $faq->pertanyaan }}
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="faq-{{ $index }}"
+                                        class="panel-collapse collapse {{ $index === 0 ? 'in' : '' }}">
+                                        <div class="panel-body">
+                                            <p>{{ $faq->jawaban }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Row -->
+        </div>
+    </div>
+    <!-- End Faq Area -->
+
+    <!-- Start Footer bottom Area -->
+    <footer>
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="footer-content">
+                            <div class="footer-head">
+                                {{-- <div class="footer-logo">
                                         <h2>Posko Kesma Bem KM</h2>
                                     </div> --}}
 
-                                    <p> </p>
-                                </div>
+                                <p> </p>
                             </div>
                         </div>
-                        <!-- end single footer -->
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="footer-content">
-                                <div class="footer-head" align="right">
-                                    <h4>information</h4>
-                                    <p>
-                                        Hubungi kami untuk layanan lebih lanjut
-                                    </p>
-                                    <div class="footer-contacts">
-                                        <p><span>instagram</span> <a
-                                                href="https://www.instagram.com/advokesmapolije/">@advokesmapolije</a>
-                                        </p>
-                                        <p><span>Email:</span> <a
-                                                href="mailto:bemkesmapolije@gmail.com">bemkesmapolije@gmail.com</a></p>
-                                        {{-- <p><span>Website BEM:</span> <a
-                                                href="https://www.example-bem-website.com">bempolije.com</a></p> --}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
-            </div>
-            <div class="footer-area-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="copyright text-center">
+                    <!-- end single footer -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="footer-content">
+                            <div class="footer-head" align="right">
+                                <h4>information</h4>
                                 <p>
-                                    &copy; Copyright <strong>PoskoKesma Polije</strong>
+                                    Hubungi kami untuk layanan lebih lanjut
                                 </p>
+                                <div class="footer-contacts">
+                                    <p><span>instagram</span> <a
+                                            href="https://www.instagram.com/advokesmapolije/">@advokesmapolije</a>
+                                    </p>
+                                    <p><span>Email:</span> <a
+                                            href="mailto:bemkesmapolije@gmail.com">bemkesmapolije@gmail.com</a></p>
+                                    {{-- <p><span>Website BEM:</span> <a
+                                                href="https://www.example-bem-website.com">bempolije.com</a></p> --}}
+                                </div>
                             </div>
-
                         </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-area-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="copyright text-center">
+                            <p>
+                                &copy; Copyright <strong>PoskoKesma Polije</strong>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- JavaScript Libraries -->
-        <script src="landingassets/lib/jquery/jquery.min.js"></script>
-        <script src="landingassets/lib/bootstrap/js/bootstrap.min.js"></script>
-        <script src="landingassets/lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="landingassets/lib/venobox/venobox.min.js"></script>
-        <script src="landingassets/lib/knob/jquery.knob.js"></script>
-        <script src="landingassets/lib/wow/wow.min.js"></script>
-        <script src="landingassets/lib/parallax/parallax.js"></script>
-        <script src="landingassets/lib/easing/easing.min.js"></script>
-        <script src="landingassets/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-        <script src="landingassets/lib/appear/jquery.appear.js"></script>
-        <script src="landingassets/lib/isotope/isotope.pkgd.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="landingassets/lib/jquery/jquery.min.js"></script>
+    <script src="landingassets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="landingassets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="landingassets/lib/venobox/venobox.min.js"></script>
+    <script src="landingassets/lib/knob/jquery.knob.js"></script>
+    <script src="landingassets/lib/wow/wow.min.js"></script>
+    <script src="landingassets/lib/parallax/parallax.js"></script>
+    <script src="landingassets/lib/easing/easing.min.js"></script>
+    <script src="landingassets/lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="landingassets/lib/appear/jquery.appear.js"></script>
+    <script src="landingassets/lib/isotope/isotope.pkgd.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
 
-        <!-- Contact Form JavaScript File -->
-        {{-- <script src="contactform/contactform.js"></script> --}}
-        <script>
-            $(document).ready(function() {
-                $('.owl-carousel').owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        },
-                        1000: {
-                            items: 5
-                        }
+    <!-- Contact Form JavaScript File -->
+    {{-- <script src="contactform/contactform.js"></script> --}}
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    nav: true,
-                    navText: [
-                        '<i class="icon-left"></i>', // Replace with the appropriate icon HTML or SVG for the left icon
-                        '<i class="icon-right"></i>' // Replace with the appropriate icon HTML or SVG for the right icon
-                    ]
-                });
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                },
+                nav: true,
+                navText: [
+                    '<i class="icon-left"></i>', // Replace with the appropriate icon HTML or SVG for the left icon
+                    '<i class="icon-right"></i>' // Replace with the appropriate icon HTML or SVG for the right icon
+                ]
             });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#department').select2({});
+        });
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+    </script>
+    <style>
+        .select2-container .select2-selection {
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+    @if (session('success'))
         <script>
-            $(document).ready(function() {
-                $('#department').select2({});
-            });
-            $(document).ready(function() {
-                $('.select2').select2();
+            Swal.fire({
+                title: 'Sukses',
+                text: '{{ session('success') }}',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 2000
             });
         </script>
-        <style>
-            .select2-container .select2-selection {
-                height: 40px;
-                background-color: #fff;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: Arial, sans-serif;
-                font-size: 14px;
-                color: #333;
-            }
-        </style>
-        @if (session('success'))
-            <script>
-                Swal.fire({
-                    title: 'Sukses',
-                    text: '{{ session('success') }}',
-                    icon: 'success',
-                    showConfirmButton: false,
-                    timer: 2000
-                });
-            </script>
-        @endif
+    @endif
 
-        @if (session('error'))
-            <script>
-                Swal.fire({
-                    title: 'Error',
-                    text: '{{ session('error') }}',
-                    icon: 'error',
-                    showConfirmButton: false,
-                    timer: 2000
-                });
-            </script>
-        @endif
+    @if (session('error'))
+        <script>
+            Swal.fire({
+                title: 'Error',
+                text: '{{ session('error') }}',
+                icon: 'error',
+                showConfirmButton: false,
+                timer: 2000
+            });
+        </script>
+    @endif
 
 
-        <script src="landingassets/js/main.js"></script>
+    <script src="landingassets/js/main.js"></script>
 </body>
 
 </html>

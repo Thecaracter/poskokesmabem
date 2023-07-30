@@ -58,7 +58,7 @@ class LandingController extends Controller
                 'angkatan_id' => 'required|exists:angkatan,id',
                 'jurusan_id' => 'required|exists:jurusan,id',
                 'prodi_id' => 'required|exists:prodi,id',
-                'layanan_id' => 'required|exists:layanan,id',
+
             ]);
 
             // Buat objek LayananAdvokasi baru dengan data yang diterima dari request
@@ -69,7 +69,7 @@ class LandingController extends Controller
             $layananAdvokasi->angkatan_id = $request->angkatan_id;
             $layananAdvokasi->jurusan_id = $request->jurusan_id;
             $layananAdvokasi->prodi_id = $request->prodi_id;
-            $layananAdvokasi->layanan_id = $request->layanan_id;
+            $layananAdvokasi->layanan_id = 1;
 
             // Simpan objek LayananAdvokasi ke database
             $layananAdvokasi->save();
