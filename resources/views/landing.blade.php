@@ -419,22 +419,6 @@
         <br>
         <br>
 
-
-        <!-- Start reviews Area -->
-        <div class="reviews-area hidden-xs">
-            <div class="work-us">
-                <div class="work-left-text">
-
-                </div>
-                <div class="work-right-text text-center">
-                    <h2>working with us</h2>
-                    <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
-                    <a href="#contact" class="ready-btn">Contact us</a>
-                </div>
-            </div>
-        </div>
-        <!-- End reviews Area -->
-
         <!-- Start Pengurus -->
         <!-- Start Pengurus -->
         <div class="testimonials-area text-center">
@@ -524,9 +508,9 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-content">
                                 <div class="footer-head">
-                                    <div class="footer-logo">
+                                    {{-- <div class="footer-logo">
                                         <h2>Posko Kesma Bem KM</h2>
-                                    </div>
+                                    </div> --}}
 
                                     <p> </p>
                                 </div>
@@ -545,9 +529,9 @@
                                                 href="https://www.instagram.com/advokesmapolije/">@advokesmapolije</a>
                                         </p>
                                         <p><span>Email:</span> <a
-                                                href="mailto:bempolije@gmail.com">bempolije@gmail.com</a></p>
-                                        <p><span>Website BEM:</span> <a
-                                                href="https://www.example-bem-website.com">bempolije.com</a></p>
+                                                href="mailto:bemkesmapolije@gmail.com">bemkesmapolije@gmail.com</a></p>
+                                        {{-- <p><span>Website BEM:</span> <a
+                                                href="https://www.example-bem-website.com">bempolije.com</a></p> --}}
                                     </div>
                                 </div>
                             </div>
