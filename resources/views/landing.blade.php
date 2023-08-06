@@ -37,7 +37,8 @@
 
     <!-- Main Stylesheet File -->
     <link href="landingassets/css/style_landingpage.css" rel="stylesheet">
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9493463356664146"
+        crossorigin="anonymous"></script>
     <!-- Responsive Stylesheet File -->
     <link href="landingassets/css/responsive.css" rel="stylesheet">
 
