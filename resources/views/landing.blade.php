@@ -353,8 +353,8 @@
     <!-- End Polije Curhat -->
 
     <!-- Form -->
-    <div
-        style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f2f2f2;">
+    <div class="form-container"
+        style="max-width: 90%; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f2f2f2;">
         <form action="{{ route('layanan-advokasi.store') }}" method="POST">
             @csrf
             <div style="margin-bottom: 20px;">
@@ -396,15 +396,7 @@
                     @endforeach
                 </select>
             </div>
-            {{-- <div style="margin-bottom: 20px;">
-                <label for="service" style="display: block;">Layanan:</label>
-                <select id="service" name="layanan_id" class="form-control select2" required>
-                    <option value=""></option>
-                    @foreach ($layanan as $l)
-                        <option value="{{ $l->id }}">{{ $l->nama_layanan }}</option>
-                    @endforeach
-                </select>
-            </div> --}}
+
             <div style="margin-bottom: 20px;">
                 <label for="feedback" style="display: block;">Curhatan:</label>
                 <textarea id="feedback" name="kritik_saran" rows="4" required
@@ -509,9 +501,9 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="footer-content">
                             <div class="footer-head">
-                                {{-- <div class="footer-logo">
-                                        <h2>Posko Kesma Bem KM</h2>
-                                    </div> --}}
+                                <div class="footer-logo">
+                                    <h2>Posko Kesma</h2>
+                                </div>
 
                                 <p> </p>
                             </div>
