@@ -7,12 +7,17 @@
     <title>@yield('title')</title>
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('admin/assets/css/app.min.css') }}">
+
+    <!-- Favicons -->
+    <link href="foto/nobg-abisatya.png" rel="icon">
+    <link href="foto/nobg-abisatya.png" rel="apple-touch-icon">
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('admin/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/css/components.css') }}">
     <!-- Custom style CSS -->
     <link rel="stylesheet" href="{{ asset('admin/assets/css/custom.css') }}">
-    <link rel='shortcut icon' type='image/x-icon' href="{{ asset('landingasset/img/Polije.png') }}" />
+    {{-- <link rel='shortcut icon' type='image/x-icon' href="{{ asset('landingasset/img/Polije.png') }}" /> --}}
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

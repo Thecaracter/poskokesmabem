@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel='shortcut icon' type='image/x-icon' href="{{ asset('landingasset/img/Polije.png') }}" />
+    <!-- Favicons -->
+    <link href="foto/nobg-abisatya.png" rel="icon">
+    <link href="foto/nobg-abisatya.png" rel="apple-touch-icon">
+    {{-- <link rel='shortcut icon' type='image/x-icon' href="{{ asset('landingasset/img/Polije.png') }}" /> --}}
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/bootstrap/css/bootstrap.min.css') }}">
     <!--===============================================================================================-->

@@ -9,8 +9,8 @@
     <meta content="" name="description">
 
     <!-- Favicons -->
-    <link href="foto/abisatya.png" rel="icon">
-    <link href="foto/abisatya.png" rel="apple-touch-icon">
+    <link href="foto/nobg-abisatya.png" rel="icon">
+    <link href="foto/nobg-abisatya.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
