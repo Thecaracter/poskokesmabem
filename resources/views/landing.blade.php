@@ -99,7 +99,12 @@
                                     <li>
                                         <a class="page-scroll" href="#infokos">Info Kos</a>
                                     </li>
-
+                                    <li>
+                                        <a class="page-scroll" href="#pc">Polije Curhat</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="#faq">FAQ</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- navbar-collapse -->
@@ -354,7 +359,7 @@
     <!-- End Polije Curhat -->
 
     <!-- Form -->
-    <div class="form-container"
+    <div id="pc" class="form-container"
         style="max-width: 90%; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f2f2f2;">
         <form action="{{ route('layanan-advokasi.store') }}" method="POST">
             @csrf
@@ -464,7 +469,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-11 col-sm-11 col-xs-15">
+                <div id="faq" class="col-md-11 col-sm-11 col-xs-15">
                     <div class="faq-details">
                         <div class="panel-group" id="accordion">
                             @foreach ($faqs as $index => $faq)
